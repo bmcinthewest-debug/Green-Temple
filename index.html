@@ -3,739 +3,727 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>วัดสีเขียว GTS | Green Temple Standard V1-2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<title>วัดสีเขียว GTS | Green Temple Standard</title>
+<meta name="description" content="มาตรฐานวัดสีเขียว (GTS) 3 องค์ประกอบ 64 ข้อ 30 คะแนน 4 ระดับ พร้อมเครื่องมือประเมินตนเองและขั้นตอนตรวจประเมิน 7 ขั้น">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-:root{--g900:#0f3d2e;--g700:#1b6b48;--g500:#2e9e63;--g300:#7ed3a4;--g50:#eef8f2;
---gold:#c9a227;--ink:#16241d;--muted:#5c7268;--line:#dcebe2;--r:16px;--sh:0 4px 20px rgba(15,61,46,.08)}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:84px}
-body{font-family:'Noto Sans Thai',sans-serif;color:var(--ink);background:#fff;line-height:1.75}
-a{color:inherit;text-decoration:none}
-.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
-.pg{display:none;animation:fade .35s ease}
-.pg.on{display:block}
-@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-section{padding:60px 0}
-.alt{background:var(--g50)}
-h2.sec{font-size:1.9rem;font-weight:800;color:var(--g900);margin-bottom:6px}
-h2.sec.c{text-align:center}
-p.sub{color:var(--muted);margin-bottom:34px}
-p.sub.c{text-align:center}
-h3.h3{font-size:1.25rem;color:var(--g900);font-weight:800;margin:28px 0 12px;padding-left:12px;border-left:4px solid var(--g500)}
-.badge{display:inline-block;background:var(--g500);color:#fff;font-size:.74rem;font-weight:700;padding:4px 14px;border-radius:99px;letter-spacing:.5px}
-.badge.d{background:var(--gold)}
-/* NAV */
-header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
-.logo{display:flex;align-items:center;gap:11px;font-weight:800;color:var(--g900);font-size:1.1rem}
-.logo .mk{width:44px;height:44px;border-radius:12px;background:linear-gradient(140deg,var(--g500),var(--g900));display:grid;place-items:center;font-size:1.4rem;box-shadow:var(--sh)}
-.logo small{display:block;font-size:.63rem;font-weight:500;color:var(--muted);letter-spacing:1.5px}
-.menu{display:flex;list-style:none;align-items:center;gap:0}
-.menu>li{position:relative}
-.menu>li>a{display:block;padding:10px 11px;border-radius:9px;font-size:.87rem;font-weight:600;color:var(--g900);transition:.2s;cursor:pointer}
-.menu>li>a:hover,.menu>li>a.act{background:var(--g50);color:var(--g700)}
-.menu>li>a.has::after{content:" ▾";font-size:.7rem;opacity:.6}
-.drop{display:none;position:absolute;top:100%;left:0;background:#fff;border:1px solid var(--line);
-border-radius:12px;box-shadow:0 12px 32px rgba(15,61,46,.14);min-width:270px;padding:8px;list-style:none}
-.menu>li:hover .drop{display:block}
-.drop a{display:block;padding:9px 14px;font-size:.86rem;border-radius:8px;color:var(--ink)}
-.drop a:hover{background:var(--g50);color:var(--g700)}
-.burger{display:none;font-size:1.7rem;background:none;border:0;color:var(--g900);cursor:pointer}
-/* HERO */
-.hero{position:relative;min-height:580px;display:grid;place-items:center;text-align:center;color:#fff;padding:60px 0}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(10,45,32,.74),rgba(10,45,32,.86)),url('https://images.unsplash.com/photo-1528181304800-259b08848526?q=80&w=1920&auto=format&fit=crop') center/cover}
-.hero .in{position:relative;max-width:900px;padding:0 20px}
-.hero h1{font-size:clamp(1.9rem,5vw,3.4rem);font-weight:900;line-height:1.3;margin:18px 0 16px;text-shadow:0 3px 18px rgba(0,0,0,.35)}
-.hero h1 em{font-style:normal;color:var(--g300)}
-.hero p{font-size:1.05rem;opacity:.93;max-width:680px;margin:0 auto 32px}
-.btns{display:flex;gap:13px;justify-content:center;flex-wrap:wrap}
-.btn{padding:13px 28px;border-radius:99px;font-weight:700;font-size:.97rem;border:2px solid transparent;cursor:pointer;transition:.25s;display:inline-flex;align-items:center;gap:8px;font-family:inherit}
-.btn-p{background:var(--g500);color:#fff}.btn-p:hover{background:var(--g300);color:var(--g900);transform:translateY(-3px)}
-.btn-o{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}.btn-o:hover{background:#fff;color:var(--g900);transform:translateY(-3px)}
-.btn-s{background:var(--g50);color:var(--g700);border-color:var(--line)}.btn-s:hover{background:var(--g500);color:#fff}
-/* PAGE HEAD */
-.phead{background:linear-gradient(135deg,var(--g900),var(--g700));color:#fff;padding:52px 0 44px}
-.phead h1{font-size:2.1rem;font-weight:900;margin:10px 0 6px}
-.phead p{opacity:.88;max-width:720px}
-.crumb{font-size:.83rem;opacity:.75}
-/* STATS */
-.stats{background:var(--g900)}
-.sgrid{display:grid;grid-template-columns:repeat(4,1fr)}
-.stat{padding:36px 14px;text-align:center;color:#fff;border-right:1px solid rgba(255,255,255,.12)}
-.stat:last-child{border:0}
-.stat b{display:block;font-size:2.7rem;font-weight:900;color:var(--g300);line-height:1.1}
-.stat span{font-size:.9rem;opacity:.85}
-/* CARDS */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.cards.two{grid-template-columns:repeat(2,1fr)}
-.cards.four{grid-template-columns:repeat(4,1fr)}
-.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px 24px;box-shadow:var(--sh);transition:.28s;border-top:5px solid var(--g500)}
-.card:hover{transform:translateY(-6px);box-shadow:0 14px 34px rgba(15,61,46,.15)}
-.card .ico{font-size:2.4rem}
-.card h3{font-size:1.24rem;color:var(--g900);margin:10px 0 4px;font-weight:800}
-.card .en{font-size:.74rem;letter-spacing:2px;color:var(--g500);font-weight:700;text-transform:uppercase}
-.card p{font-size:.92rem;color:var(--muted)}
-.card ul{list-style:none;margin:14px 0;font-size:.9rem;color:var(--muted)}
-.card ul li{padding:4px 0 4px 22px;position:relative}
-.card ul li::before{content:"✓";position:absolute;left:0;color:var(--g500);font-weight:800}
-.pill{display:inline-block;background:var(--g50);color:var(--g700);font-weight:700;font-size:.8rem;padding:5px 13px;border-radius:99px;margin:5px 5px 12px 0}
-.link{color:var(--g700);font-weight:700;font-size:.9rem;cursor:pointer}
-.link:hover{text-decoration:underline}
-/* LEVELS */
-.levels{max-width:840px;margin:0 auto;display:grid;gap:14px}
-.lvl{display:grid;grid-template-columns:190px 1fr 90px;align-items:center;gap:16px;background:#fff;padding:15px 20px;border-radius:14px;border:1px solid var(--line)}
-.lvl b{font-weight:800;color:var(--g900)}
-.lvl .tr{background:var(--g50);height:18px;border-radius:99px;overflow:hidden}
-.lvl .fl{height:100%;border-radius:99px;transition:width 1.2s ease}
-.lvl .sc{text-align:right;font-weight:700;color:var(--muted);font-size:.88rem}
-.c1{background:linear-gradient(90deg,#1b6b48,#c9a227)}.c2{background:linear-gradient(90deg,#2e9e63,#7ed3a4)}
-.c3{background:linear-gradient(90deg,#7ed3a4,#b8e6cd)}.c4{background:linear-gradient(90deg,#c9ccca,#e3e6e4)}
-/* TABLE */
-.tw{overflow-x:auto}
-table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--sh);min-width:560px}
-th{background:var(--g900);color:#fff;padding:13px;text-align:left;font-size:.88rem;white-space:nowrap}
-td{padding:12px 13px;border-bottom:1px solid var(--line);font-size:.9rem;vertical-align:top}
-tr:last-child td{border:0}tbody tr:hover td{background:var(--g50)}
-td.id{font-weight:800;color:var(--g700);white-space:nowrap}
-.tag{display:inline-block;padding:3px 11px;border-radius:99px;font-size:.75rem;font-weight:700;color:#fff;white-space:nowrap}
-.t1{background:var(--gold)}.t2{background:var(--g500)}.t3{background:var(--g300);color:var(--g900)}.t4{background:#9aa8a2}
-.na{background:#fff;border:1px dashed var(--gold);color:var(--gold);padding:2px 9px;border-radius:99px;font-size:.72rem;font-weight:700}
-/* STEPS */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
-.step .n{width:38px;height:38px;border-radius:11px;background:var(--g500);color:#fff;display:grid;place-items:center;font-weight:800;margin-bottom:11px}
-.step h4{color:var(--g900);font-size:1rem;margin-bottom:5px}
-.step p{font-size:.86rem;color:var(--muted)}
-.step .who{margin-top:9px;font-size:.76rem;color:var(--g700);font-weight:700;background:var(--g50);display:inline-block;padding:3px 10px;border-radius:99px}
-/* TIMELINE */
-.tl{position:relative;padding-left:34px;max-width:860px}
-.tl::before{content:"";position:absolute;left:11px;top:6px;bottom:6px;width:2px;background:var(--line)}
-.tli{position:relative;padding-bottom:26px}
-.tli::before{content:"";position:absolute;left:-28px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--g500);border:3px solid #fff;box-shadow:0 0 0 2px var(--g300)}
-.tli b{color:var(--g900);display:block}
-.tli span{font-size:.88rem;color:var(--muted)}
-/* PANEL */
-.two2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.panel{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px;box-shadow:var(--sh)}
-.panel h3{color:var(--g900);font-size:1.16rem;margin-bottom:16px;padding-bottom:11px;border-bottom:2px solid var(--g50)}
-.item{padding:13px 0;border-bottom:1px dashed var(--line)}.item:last-child{border:0}
-.item .date{font-size:.77rem;color:var(--g500);font-weight:700}
-.item h4{font-size:.99rem;margin:2px 0}
-.item p{font-size:.86rem;color:var(--muted)}
-/* TOOL */
-.tool{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:32px;border:1px solid var(--line)}
-.fr{margin-bottom:15px}
-.fr label{display:block;font-weight:600;font-size:.87rem;margin-bottom:5px;color:var(--g900)}
-input[type=text],input[type=email],input[type=number],select,textarea{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:10px;font-family:inherit;font-size:.93rem;background:var(--g50)}
-input:focus,select:focus,textarea:focus{outline:2px solid var(--g300);background:#fff}
-textarea{min-height:100px;resize:vertical}
-.g2{display:grid;grid-template-columns:1fr 1fr;gap:15px}
-.chk{display:flex;gap:10px;align-items:flex-start;padding:11px 13px;border:1px solid var(--line);border-radius:10px;margin-bottom:8px;background:#fff;transition:.15s;flex-wrap:wrap}
-.chk:hover{border-color:var(--g300);background:var(--g50)}
-.chk input{width:19px;height:19px;accent-color:var(--g500);flex:none;margin-top:3px;cursor:pointer}
-.chk .txt{flex:1;min-width:200px;font-size:.9rem}
-.chk .txt b{color:var(--g700);margin-right:6px}
-.chk .naw{display:flex;align-items:center;gap:5px;font-size:.76rem;color:var(--gold);font-weight:700;cursor:pointer}
-.chk .naw input{width:15px;height:15px;accent-color:var(--gold);margin:0}
-.result{background:var(--g900);color:#fff;border-radius:14px;padding:26px;text-align:center;position:sticky;bottom:14px;box-shadow:0 -6px 24px rgba(15,61,46,.2)}
-.result .score{font-size:3rem;font-weight:900;color:var(--g300);line-height:1}
-.result .lv{font-size:1.2rem;font-weight:800;margin-top:5px}
-.result .hint{font-size:.87rem;opacity:.85;margin-top:7px}
-.result .brk{font-size:.83rem;opacity:.8;margin-top:9px}
-/* DOWNLOAD */
-.dl{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.dlbox{background:#fff;border:1px solid var(--line);border-left:5px solid var(--g500);border-radius:12px;padding:20px;display:flex;gap:13px;align-items:flex-start;transition:.2s}
-.dlbox:hover{transform:translateX(5px);box-shadow:var(--sh)}
-.dlbox .f{font-size:1.8rem}.dlbox h4{font-size:.98rem;color:var(--g900)}.dlbox span{font-size:.79rem;color:var(--muted)}
-/* MAP */
-.mapbox{border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);border:1px solid var(--line)}
-.mapbox iframe{width:100%;height:430px;border:0;display:block}
-.legend{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-bottom:20px}
-.lg{display:flex;align-items:center;gap:7px;font-size:.87rem;font-weight:600;background:#fff;border:1px solid var(--line);padding:7px 15px;border-radius:99px}
-.dot{width:13px;height:13px;border-radius:50%}
-/* FAQ */
-details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:11px;overflow:hidden}
-summary{padding:16px 20px;font-weight:700;color:var(--g900);cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:14px;font-size:.96rem}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"+";font-size:1.35rem;color:var(--g500);font-weight:400}
-details[open] summary::after{content:"−"}
-details .body{padding:0 20px 18px;color:var(--muted);font-size:.92rem}
-/* PARTNERS */
-.partners{display:flex;flex-wrap:wrap;gap:15px;justify-content:center}
-.pt{background:#fff;border:1px solid var(--line);border-radius:12px;padding:17px 24px;font-weight:700;color:var(--g700);font-size:.9rem;text-align:center;min-width:190px;transition:.2s}
-.pt:hover{border-color:var(--g500);transform:translateY(-4px)}
-.pt small{display:block;font-weight:400;color:var(--muted);font-size:.74rem}
-/* NOTE */
-.note{background:#fffaf0;border:1px solid #f0dfae;border-left:5px solid var(--gold);border-radius:12px;padding:18px 22px;font-size:.92rem}
-.note b{color:#8a6d0b}
-.formula{background:var(--g900);color:#cfe5da;border-radius:14px;padding:24px;text-align:center;font-size:1.05rem;overflow-x:auto}
-.formula b{color:var(--g300);font-size:1.2rem}
-/* SITEMAP */
-.smap{columns:2;column-gap:34px}
-.smap ul{list-style:none;font-size:.92rem}
-.smap>ul>li{break-inside:avoid;margin-bottom:20px}
-.smap>ul>li>a{font-weight:800;color:var(--g900);font-size:1.02rem;display:block;padding-bottom:6px;border-bottom:2px solid var(--g50);margin-bottom:6px}
-.smap ul ul li{padding:3px 0 3px 18px;position:relative;color:var(--muted)}
-.smap ul ul li::before{content:"└";position:absolute;left:2px;color:var(--g300)}
-.smap ul ul li a:hover{color:var(--g700);font-weight:600}
-/* CONTACT */
-.cgrid{display:grid;grid-template-columns:1fr 1.2fr;gap:28px}
-.cinfo div.row{display:flex;gap:13px;margin-bottom:18px}
-.cinfo .i{width:44px;height:44px;flex:none;border-radius:11px;background:var(--g50);display:grid;place-items:center;font-size:1.15rem}
-.cinfo b{display:block;color:var(--g900)}.cinfo span{font-size:.89rem;color:var(--muted)}
-/* FOOTER */
-footer{background:var(--g900);color:#cfe5da;padding:52px 0 0}
-.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px;padding-bottom:34px}
-footer h5{color:#fff;font-size:.98rem;margin-bottom:13px}
-footer ul{list-style:none;font-size:.88rem}
-footer ul li{padding:4px 0;opacity:.85;cursor:pointer}footer ul li:hover{opacity:1;color:var(--g300)}
-footer .quote{font-size:.88rem;opacity:.8;margin-top:11px;border-left:3px solid var(--g500);padding-left:13px}
-.fbot{border-top:1px solid rgba(255,255,255,.13);padding:18px 0;text-align:center;font-size:.83rem;opacity:.7}
-.top{position:fixed;right:20px;bottom:20px;width:46px;height:46px;border-radius:50%;background:var(--g500);color:#fff;border:0;font-size:1.2rem;cursor:pointer;box-shadow:var(--sh);z-index:150;display:none}
-@media(max-width:980px){
- .menu{display:none;position:absolute;top:78px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;padding:12px;border-bottom:1px solid var(--line);max-height:75vh;overflow:auto}
- .menu.open{display:flex}.menu>li>a{padding:12px}
- .drop{display:block;position:static;box-shadow:none;border:0;border-left:2px solid var(--g50);border-radius:0;margin-left:14px;min-width:0}
- .burger{display:block}
- .sgrid,.cards,.cards.two,.cards.four,.steps,.two2,.dl,.cgrid,.fgrid,.g2{grid-template-columns:1fr}
- .stat{border-right:0;border-bottom:1px solid rgba(255,255,255,.12)}
- .lvl{grid-template-columns:1fr;gap:7px}.lvl .sc{text-align:left}
- .smap{columns:1}
+:root{
+ --g900:#0d3520;--g800:#14532d;--g700:#166534;--g600:#1f7a3f;--g500:#2f9e5a;
+ --g400:#4ab86f;--g100:#dcf3e4;--g50:#f4faf6;
+ --gold:#c9a227;--clay:#c0704a;--ink:#1b2a21;--mut:#5c6b62;--line:#dde8e1;
+ --sh:0 10px 30px rgba(13,53,32,.10);--r:16px;--max:1240px;
 }
-@media(max-width:980px) and (min-width:620px){.sgrid,.cards,.cards.four,.steps,.dl{grid-template-columns:1fr 1fr}}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{font-family:'Prompt',system-ui,sans-serif;color:var(--ink);line-height:1.7;background:#fff;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+li{list-style:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+
+/* ===== TOPBAR ===== */
+.topbar{background:var(--g900);color:#bcd9c8;font-size:.82rem;font-family:'Sarabun'}
+.topbar .wrap{display:flex;justify-content:space-between;gap:12px;padding-top:7px;padding-bottom:7px;flex-wrap:wrap}
+.topbar b{color:#9ff0b8}
+
+/* ===== HEADER / MEGA MENU ===== */
+header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px;gap:14px}
+.brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.logo{width:48px;height:48px;border-radius:14px;background:linear-gradient(140deg,var(--g600),var(--g400));display:grid;place-items:center;font-size:25px;box-shadow:0 6px 18px rgba(31,122,63,.35)}
+.brand b{display:block;font-size:1.15rem;color:var(--g800);line-height:1.2}
+.brand small{font-size:.68rem;color:var(--mut);letter-spacing:1.4px}
+.menu{display:flex;align-items:center;gap:2px}
+.menu>li{position:relative}
+.menu>li>a{display:flex;align-items:center;gap:5px;padding:10px 12px;border-radius:10px;font-size:.9rem;transition:.2s;white-space:nowrap}
+.menu>li>a:hover,.menu>li:hover>a{background:var(--g50);color:var(--g700)}
+.menu>li>a.active{background:var(--g700);color:#fff;font-weight:500}
+.caret{font-size:.6rem;opacity:.6}
+
+/* dropdown */
+.dd{position:absolute;top:calc(100% + 8px);left:0;min-width:290px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh);padding:10px;opacity:0;visibility:hidden;transform:translateY(10px);transition:.22s}
+.menu>li:hover .dd{opacity:1;visibility:visible;transform:none}
+.dd.mega{width:min(920px,88vw);left:50%;transform:translate(-50%,10px);display:grid;grid-template-columns:repeat(3,1fr);gap:6px 18px;padding:20px}
+.menu>li:hover .dd.mega{transform:translate(-50%,0)}
+.dd.right{left:auto;right:0}
+.dd h6{grid-column:1/-1;font-size:.72rem;letter-spacing:1.6px;color:var(--g600);text-transform:uppercase;padding:4px 10px 8px;border-bottom:1px dashed var(--line);margin-bottom:6px}
+.dd a{display:block;padding:9px 12px;border-radius:9px;font-size:.87rem;font-family:'Sarabun';transition:.18s}
+.dd a:hover{background:var(--g50);color:var(--g700);padding-left:17px}
+.dd .grp{font-size:.78rem;font-weight:600;color:var(--g800);padding:9px 12px 4px;font-family:'Prompt'}
+.dd .sub a{font-size:.82rem;color:var(--mut);padding:6px 12px 6px 24px;position:relative}
+.dd .sub a::before{content:'·';position:absolute;left:14px;color:var(--g400)}
+.star{color:var(--gold);font-weight:700}
+.burger{display:none;width:46px;height:46px;border:1px solid var(--line);background:#fff;border-radius:12px;font-size:20px;color:var(--g800);cursor:pointer}
+
+/* ===== HERO ===== */
+.hero{position:relative;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(100deg,rgba(8,40,23,.93),rgba(15,61,36,.7) 48%,rgba(20,83,45,.3)),url('https://images.unsplash.com/photo-1563492065599-3520f775eeed?auto=format&fit=crop&w=1900&q=80') center/cover}
+.hero-in{position:relative;padding:96px 0 90px;max-width:790px}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:7px 16px;border-radius:999px;font-size:.83rem;margin-bottom:22px}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.28;font-weight:700;text-shadow:0 4px 26px rgba(0,0,0,.35)}
+.hero h1 em{font-style:normal;color:#9ff0b8}
+.hero p{margin:20px 0 32px;font-family:'Sarabun';font-size:1.06rem;color:#e4f4ea;max-width:640px}
+.cta{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 28px;border-radius:999px;font-weight:600;font-size:.98rem;border:2px solid transparent;cursor:pointer;transition:.25s}
+.btn-p{background:linear-gradient(135deg,var(--g500),var(--g400));color:#fff;box-shadow:0 12px 30px rgba(47,158,90,.42)}
+.btn-p:hover{transform:translateY(-3px)}
+.btn-g{border-color:rgba(255,255,255,.65);color:#fff}
+.btn-g:hover{background:#fff;color:var(--g800);transform:translateY(-3px)}
+.hero-note{margin-top:26px;font-size:.84rem;font-family:'Sarabun';color:#bcd9c8}
+.leaf{position:absolute;opacity:.15;font-size:130px;animation:sway 7s ease-in-out infinite;pointer-events:none}
+.leaf.a{top:11%;right:7%}.leaf.b{bottom:12%;right:23%;font-size:78px;animation-delay:1.5s}
+@keyframes sway{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-22px) rotate(8deg)}}
+
+/* ===== STATS ===== */
+.stats{background:var(--g800)}
+.sgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(255,255,255,.15)}
+.stat{background:var(--g800);padding:34px 14px;text-align:center;color:#fff;transition:.3s}
+.stat:hover{background:var(--g700)}
+.stat .n{font-size:clamp(1.9rem,3.4vw,2.7rem);font-weight:700;color:#9ff0b8;line-height:1.1}
+.stat .l{font-size:.88rem;color:#cfe9d8;margin-top:5px}
+
+/* ===== SECTION ===== */
+section{padding:88px 0}
+.sec-head{text-align:center;max-width:760px;margin:0 auto 50px}
+.kick{display:inline-block;color:var(--g600);font-weight:600;letter-spacing:2px;font-size:.78rem;text-transform:uppercase;margin-bottom:9px}
+.sec-head h2{font-size:clamp(1.65rem,3.3vw,2.35rem);color:var(--g900);font-weight:700}
+.sec-head p{color:var(--mut);font-family:'Sarabun';margin-top:12px}
+.alt{background:var(--g50)}
+
+/* ===== ABOUT ===== */
+.about{display:grid;grid-template-columns:1.15fr 1fr;gap:44px;align-items:center}
+.about h3{font-size:1.6rem;color:var(--g900);margin-bottom:14px}
+.about p{font-family:'Sarabun';color:var(--mut);margin-bottom:14px}
+.about ul{display:grid;gap:11px;margin:20px 0 26px}
+.about ul li{display:flex;gap:11px;font-family:'Sarabun';font-size:.95rem}
+.tick{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--g100);color:var(--g700);display:grid;place-items:center;font-size:.75rem;font-weight:700;margin-top:3px}
+.doc-status{background:#fff8e6;border:1px solid #f0dfae;border-left:5px solid var(--gold);border-radius:12px;padding:16px 20px;font-family:'Sarabun';font-size:.9rem}
+.doc-status b{font-family:'Prompt';color:#8a6d10;display:block;margin-bottom:3px}
+.about-cards{display:grid;gap:16px}
+.acard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;transition:.25s}
+.acard:hover{border-color:var(--g400);box-shadow:var(--sh);transform:translateY(-4px)}
+.acard .i{font-size:28px;margin-bottom:8px}
+.acard b{color:var(--g800)}
+.acard p{font-family:'Sarabun';font-size:.88rem;color:var(--mut)}
+
+/* ===== PILLARS ===== */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.pil{position:relative;color:#fff;border-radius:var(--r);padding:32px 28px;box-shadow:var(--sh);overflow:hidden;transition:.3s;display:flex;flex-direction:column}
+.pil:nth-child(1){background:linear-gradient(160deg,#166534,#1f7a3f)}
+.pil:nth-child(2){background:linear-gradient(160deg,#1c7a4b,#35a76a)}
+.pil:nth-child(3){background:linear-gradient(160deg,#0f5c46,#2a8f74)}
+.pil:hover{transform:translateY(-8px);box-shadow:0 22px 46px rgba(13,53,32,.26)}
+.pil::after{content:'';position:absolute;width:190px;height:190px;background:rgba(255,255,255,.08);border-radius:50%;right:-64px;top:-64px}
+.pil .ic{font-size:42px;margin-bottom:12px}
+.pil h3{font-size:1.3rem;letter-spacing:1px}
+.pil .th{color:#cbeed9;font-size:.95rem;margin-bottom:14px}
+.chips{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:16px}
+.chip{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.26);padding:4px 13px;border-radius:999px;font-size:.82rem}
+.pil ol{font-family:'Sarabun';font-size:.87rem;color:#e2f6e9;display:grid;gap:6px;margin-bottom:20px;position:relative;z-index:1}
+.pil ol li{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dashed rgba(255,255,255,.2);padding-bottom:5px}
+.pil ol li span{opacity:.75;font-size:.8rem;white-space:nowrap}
+.more{margin-top:auto;align-self:flex-start;background:#fff;color:var(--g800);padding:10px 20px;border-radius:999px;font-weight:600;font-size:.88rem;position:relative;z-index:1;transition:.25s}
+.more:hover{background:#eafaf0;padding-right:26px}
+
+/* ===== N/A + ข้อหลัก/เสริม ===== */
+.na-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.na{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px;border-top:5px solid var(--g500)}
+.na:nth-child(2){border-top-color:var(--gold)}
+.na:nth-child(3){border-top-color:var(--clay)}
+.na h4{font-size:1.08rem;color:var(--g900);margin-bottom:8px}
+.na p{font-family:'Sarabun';font-size:.9rem;color:var(--mut)}
+.formula{margin-top:34px;background:var(--g900);color:#dcf3e4;border-radius:var(--r);padding:30px;text-align:center;font-family:'Sarabun'}
+.formula code{display:block;font-family:'Prompt';font-size:clamp(.95rem,2.4vw,1.28rem);color:#9ff0b8;margin-top:12px;font-weight:600}
+
+/* ===== LEVELS ===== */
+.lv-list{max-width:920px;margin:0 auto;display:grid;gap:18px}
+.lv{background:#fff;border-radius:14px;padding:20px 24px;box-shadow:0 4px 14px rgba(13,53,32,.07);border-left:6px solid var(--c)}
+.lv-top{display:flex;justify-content:space-between;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:11px}
+.lv-name{font-weight:600;font-size:1.08rem;display:flex;align-items:center;gap:10px}
+.dot{width:12px;height:12px;border-radius:50%;background:var(--c)}
+.lv-sc{font-family:'Sarabun';font-size:.9rem;color:var(--mut)}
+.bar{height:14px;background:#e9f1ec;border-radius:999px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,var(--c),var(--c2));transition:width 1.4s cubic-bezier(.22,1,.36,1)}
+
+/* ===== PROCESS ===== */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px 20px;position:relative;transition:.25s}
+.step:hover{border-color:var(--g400);box-shadow:var(--sh);transform:translateY(-5px)}
+.step .no{width:40px;height:40px;border-radius:12px;background:var(--g700);color:#fff;display:grid;place-items:center;font-weight:700;margin-bottom:12px}
+.step:nth-child(1) .no{background:var(--gold)}
+.step:last-child .no{background:var(--g500)}
+.step h4{font-size:1rem;color:var(--g900);margin-bottom:5px}
+.step p{font-family:'Sarabun';font-size:.86rem;color:var(--mut)}
+
+/* ===== TOOLS / DOWNLOADS ===== */
+.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tool{display:flex;gap:16px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;transition:.25s}
+.tool:hover{border-color:var(--g400);box-shadow:var(--sh);transform:translateY(-4px)}
+.tool .ti{flex-shrink:0;width:50px;height:50px;border-radius:14px;background:var(--g100);display:grid;place-items:center;font-size:23px}
+.tool b{display:block;color:var(--g800);font-size:.98rem}
+.tool p{font-family:'Sarabun';font-size:.85rem;color:var(--mut);margin:3px 0 8px}
+.link{color:var(--g600);font-weight:600;font-size:.85rem}
+.link:hover{text-decoration:underline}
+
+/* ===== NEWS / RESULTS ===== */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.panel h3{font-size:1.28rem;color:var(--g900);margin-bottom:18px;display:flex;align-items:center;gap:10px;justify-content:space-between}
+.panel h3 a{font-size:.82rem;color:var(--g600);font-weight:500}
+.card{display:flex;gap:17px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:15px;transition:.25s}
+.card:hover{border-color:var(--g400);box-shadow:var(--sh);transform:translateX(5px)}
+.date{flex-shrink:0;width:66px;text-align:center;background:var(--g50);border-radius:12px;padding:10px 4px;color:var(--g700)}
+.date b{display:block;font-size:1.45rem;line-height:1.1}
+.date span{font-size:.75rem}
+.card h4{font-size:1rem;font-weight:600;margin-bottom:3px}
+.card p{font-family:'Sarabun';font-size:.87rem;color:var(--mut);margin-bottom:7px}
+.sbadge{flex-shrink:0;width:66px;height:66px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#d9b43c,#c9a227);color:#fff;font-weight:700;font-size:.95rem;line-height:1.05;text-align:center}
+.tag{display:inline-block;background:var(--g100);color:var(--g700);font-size:.73rem;padding:3px 10px;border-radius:999px;margin-bottom:5px;font-weight:500}
+
+/* ===== FAQ ===== */
+.faq{max-width:880px;margin:0 auto;display:grid;gap:12px}
+.q{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.q summary{cursor:pointer;padding:18px 22px;font-weight:500;display:flex;justify-content:space-between;gap:12px;align-items:center;list-style:none}
+.q summary::-webkit-details-marker{display:none}
+.q summary::after{content:'+';font-size:1.4rem;color:var(--g600);transition:.25s}
+.q[open] summary::after{transform:rotate(45deg)}
+.q[open] summary{background:var(--g50);color:var(--g700)}
+.q .a{padding:6px 22px 20px;font-family:'Sarabun';font-size:.92rem;color:var(--mut)}
+
+/* ===== PARTNERS ===== */
+.plogos{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.plogo{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 24px;min-width:172px;text-align:center;transition:.25s}
+.plogo:hover{transform:translateY(-5px);border-color:var(--g400);box-shadow:var(--sh)}
+.plogo .c{width:48px;height:48px;margin:0 auto 9px;border-radius:50%;background:var(--g100);display:grid;place-items:center;font-size:22px}
+.plogo b{font-size:.92rem;color:var(--g800)}
+.plogo span{display:block;font-size:.76rem;color:var(--mut)}
+
+/* ===== CTA BAND ===== */
+.band{background:linear-gradient(120deg,var(--g800),var(--g600));color:#fff;text-align:center;border-radius:22px;padding:52px 30px;box-shadow:var(--sh)}
+.band h2{font-size:clamp(1.5rem,3vw,2.1rem);margin-bottom:10px}
+.band p{font-family:'Sarabun';color:#d6efe0;margin-bottom:26px}
+
+/* ===== FOOTER ===== */
+footer{background:var(--g900);color:#c6dbcf;padding:64px 0 0;font-family:'Sarabun'}
+.fgrid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr 1.2fr;gap:32px;padding-bottom:44px}
+footer h5{color:#fff;font-family:'Prompt';font-size:1rem;margin-bottom:15px}
+footer ul{display:grid;gap:8px;font-size:.88rem}
+footer a:hover{color:#9ff0b8}
+.fbrand{display:flex;gap:12px;align-items:center;margin-bottom:13px}
+.fbrand b{color:#fff;font-family:'Prompt';font-size:1.1rem}
+.fbot{border-top:1px solid rgba(255,255,255,.13);padding:20px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.85rem}
+.fbot a{margin-left:18px}
+
+.rv{opacity:0;transform:translateY(26px);transition:.7s ease}
+.rv.in{opacity:1;transform:none}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1150px){
+ .menu{position:fixed;inset:76px 0 0 0;background:#fff;flex-direction:column;align-items:stretch;padding:14px;gap:2px;overflow-y:auto;display:none}
+ .menu.open{display:flex}
+ .menu>li>a{padding:14px 16px;justify-content:space-between}
+ .dd,.dd.mega{position:static;width:auto;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;border-left:3px solid var(--g100);border-radius:0;margin:0 0 6px 14px;padding:0 0 0 8px;display:none;grid-template-columns:1fr}
+ .menu>li.on .dd,.menu>li.on .dd.mega{display:grid;transform:none}
+ .burger{display:block}
+ .steps,.tools,.na-grid{grid-template-columns:1fr 1fr}
+ .fgrid{grid-template-columns:1fr 1fr 1fr}
+}
+@media(max-width:900px){
+ .about,.two,.pillars{grid-template-columns:1fr}
+ .sgrid{grid-template-columns:1fr 1fr 1fr}
+}
+@media(max-width:600px){
+ section{padding:60px 0}
+ .hero-in{padding:70px 0}
+ .btn{width:100%;justify-content:center}
+ .steps,.tools,.na-grid,.fgrid{grid-template-columns:1fr}
+ .sgrid{grid-template-columns:1fr 1fr}
+}
 </style>
 </head>
 <body>
 
-<!-- ================= NAV ================= -->
+<!-- ============ TOPBAR ============ -->
+<div class="topbar"><div class="wrap">
+  <span>📄 สถานะเอกสาร: <b>ฉบับร่างเพื่อการพัฒนา (Draft for Development)</b> — ปรับปรุงล่าสุด ก.ย. 2569</span>
+  <span>☎️ 0-2000-0000 | ✉️ info@greentemple.or.th</span>
+</div></div>
+
+<!-- ============ HEADER ============ -->
 <header>
- <div class="wrap nav">
-  <a href="#/home" class="logo"><span class="mk">🌿</span><span>วัดสีเขียว <small>GREEN TEMPLE STANDARD</small></span></a>
-  <ul class="menu" id="menu">
-   <li><a href="#/home">หน้าแรก</a></li>
-   <li><a class="has">เกี่ยวกับเรา</a>
-    <ul class="drop">
-     <li><a href="#/about">ความเป็นมาและวิสัยทัศน์</a></li>
-     <li><a href="#/about-team">ทีมที่ปรึกษาและคณะทำงาน</a></li>
-     <li><a href="#/about-partners">หน่วยงานพันธมิตร</a></li>
-     <li><a href="#/about-status">สถานะของเอกสาร</a></li>
-    </ul></li>
-   <li><a class="has">มาตรฐาน</a>
-    <ul class="drop">
-     <li><a href="#/std">โครงสร้างและภาพรวม</a></li>
-     <li><a href="#/std-clean">1. CLEAN – ความสะอาด (26 ข้อ)</a></li>
-     <li><a href="#/std-green">2. GREEN – สิ่งแวดล้อม (25 ข้อ)</a></li>
-     <li><a href="#/std-part">3. PARTICIPATION – มีส่วนร่วม (13 ข้อ)</a></li>
-     <li><a href="#/std-score">ระบบให้คะแนนและข้อ N/A</a></li>
-     <li><a href="#/std-level">ระดับมาตรฐานและการแปลผล</a></li>
-    </ul></li>
-   <li><a class="has">เครื่องมือ</a>
-    <ul class="drop">
-     <li><a href="#/tool-context">แบบสำรวจบริบทวัด</a></li>
-     <li><a href="#/tool-audit">แบบตรวจประเมินตนเอง 64 ข้อ</a></li>
-     <li><a href="#/tool-summary">ใบสรุปคะแนน</a></li>
-     <li><a href="#/tool-evidence">หลักฐานประกอบการประเมิน</a></li>
-     <li><a href="#/tool-plan">แบบแผนปรับปรุงวัดสีเขียว</a></li>
-    </ul></li>
-   <li><a href="#/process">ขั้นตอน</a></li>
-   <li><a href="#/downloads">ดาวน์โหลด</a></li>
-   <li><a href="#/map">แผนที่</a></li>
-   <li><a href="#/results">ผลประเมิน</a></li>
-   <li><a href="#/news">ข่าวสาร</a></li>
-   <li><a href="#/faq">FAQ</a></li>
-   <li><a href="#/contact">ติดต่อ</a></li>
-  </ul>
-  <button class="burger" onclick="menu.classList.toggle('open')">☰</button>
- </div>
+<div class="wrap nav">
+  <a href="#home" class="brand">
+    <div class="logo">🌿</div>
+    <div><b>วัดสีเขียว GTS</b><small>GREEN TEMPLE STANDARD</small></div>
+  </a>
+
+  <nav><ul class="menu" id="menu">
+    <li><a href="#home" class="active">หน้าหลัก</a></li>
+
+    <li><a href="#about">เกี่ยวกับเรา <i class="caret">▼</i></a>
+      <ul class="dd">
+        <li><a href="#about">ความเป็นมาและวิสัยทัศน์</a></li>
+        <li><a href="#about">ทีมงานและคณะทำงาน</a></li>
+        <li><a href="#partners">หน่วยงานที่เกี่ยวข้อง</a></li>
+        <li><a href="#about">สถานะของเอกสาร (ฉบับร่าง)</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#standard">มาตรฐานวัดสีเขียว <i class="caret">▼</i></a>
+      <div class="dd mega">
+        <h6>Green Temple Standard · 3 องค์ประกอบ 64 ข้อ 30 คะแนน</h6>
+        <div>
+          <div class="grp">🧹 CLEAN · 26 ข้อ / 12 คะแนน</div>
+          <ul class="sub">
+            <li><a href="#standard">อาคาร/ศาสนสถาน (C1–C6)</a></li>
+            <li><a href="#standard">ห้องน้ำ/ส้วม (C7–C10)</a></li>
+            <li><a href="#standard">น้ำเสีย (C11–C14)</a></li>
+            <li><a href="#standard">ขยะ (C15–C20)</a></li>
+            <li><a href="#standard">พาหะนำโรค (C21–C22)</a></li>
+            <li><a href="#standard">สัตว์ (C23)</a></li>
+            <li><a href="#standard">ความสะอาดโดยรอบ (C24)</a></li>
+            <li><a href="#standard">เมรุ/ฌาปนสถาน (C25)<span class="star">*</span></a></li>
+            <li><a href="#standard">งานวัด/ตลาดนัด (C26)<span class="star">*</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="grp">🌿 GREEN · 25 ข้อ / 12 คะแนน</div>
+          <ul class="sub">
+            <li><a href="#standard">พื้นที่สีเขียวและภูมิทัศน์ (G1–G6)</a></li>
+            <li><a href="#standard">พลังงาน (G7–G12)<span class="star">*</span></a></li>
+            <li><a href="#standard">น้ำ (G13–G15)<span class="star">*</span></a></li>
+            <li><a href="#standard">น้ำฝน/น้ำใช้ซ้ำ (G16)</a></li>
+            <li><a href="#standard">ขยะและทรัพยากร (G17–G18)</a></li>
+            <li><a href="#standard">ความปลอดภัย (G19–G24)</a></li>
+            <li><a href="#standard">การเข้าถึงผู้สูงอายุ/ผู้พิการ (G25)<span class="star">*</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="grp">🤝 PARTICIPATION · 13 ข้อ / 6 คะแนน</div>
+          <ul class="sub">
+            <li><a href="#standard">นโยบาย (P1–P3)</a></li>
+            <li><a href="#standard">คณะทำงาน (P4–P6)</a></li>
+            <li><a href="#standard">ชุมชนและอาสาสมัคร (P7–P8)</a></li>
+            <li><a href="#standard">การสื่อสารและการเรียนรู้ (P9–P10)</a></li>
+            <li><a href="#standard">การติดตามและพัฒนา (P11–P12)</a></li>
+            <li><a href="#standard">เครือข่ายท้องถิ่น (P13)<span class="star">*</span></a></li>
+          </ul>
+          <div class="grp">⚙️ ระบบเกณฑ์</div>
+          <ul class="sub">
+            <li><a href="#na">ระบบข้อ N/A (ไม่เกี่ยวข้อง)</a></li>
+            <li><a href="#na">ข้อหลัก vs ข้อเสริม</a></li>
+            <li><a href="#levels">ระดับมาตรฐานและการแปลผล</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li><a href="#tools">เครื่องมือ <i class="caret">▼</i></a>
+      <ul class="dd">
+        <li><a href="#tools">แบบสำรวจบริบทวัดก่อนประเมิน</a></li>
+        <li><a href="#tools">แบบตรวจประเมินตนเอง 64 ข้อ</a></li>
+        <li><a href="#tools">ใบสรุปคะแนน (ปรับตาม N/A)</a></li>
+        <li><a href="#tools">หลักฐานประกอบ 6 รายการ</a></li>
+        <li><a href="#tools">แบบแผนปรับปรุงวัดสีเขียว</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#process">ขั้นตอน <i class="caret">▼</i></a>
+      <ul class="dd">
+        <li><a href="#process">ขั้นที่ 0 · สำรวจบริบทวัด</a></li>
+        <li><a href="#process">ขั้นที่ 1 · เตรียมการ</a></li>
+        <li><a href="#process">ขั้นที่ 2 · Self-Audit</a></li>
+        <li><a href="#process">ขั้นที่ 3 · ตรวจคัดกรอง</a></li>
+        <li><a href="#process">ขั้นที่ 4 · ตรวจประเมินภายนอก</a></li>
+        <li><a href="#process">ขั้นที่ 5 · สรุปผลและจัดระดับ</a></li>
+        <li><a href="#process">ขั้นที่ 6 · พัฒนาต่อเนื่อง (PDCA)</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#downloads">ดาวน์โหลด <i class="caret">▼</i></a>
+      <ul class="dd">
+        <li><a href="#downloads">ตัวอย่างนโยบายวัดสีเขียว</a></li>
+        <li><a href="#downloads">แบบแต่งตั้งคณะทำงาน</a></li>
+        <li><a href="#downloads">แบบสรุปผล + ใบรับรองต้นแบบ</a></li>
+        <li><a href="#downloads">คู่มือมาตรฐาน GTS ฉบับเต็ม (PDF)</a></li>
+        <li><a href="#downloads">ภาคผนวก ก–ค</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#news">ข่าวสาร</a></li>
+    <li><a href="#map">แผนที่</a></li>
+    <li><a href="#results">ผลประเมิน</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact">ติดต่อ <i class="caret">▼</i></a>
+      <ul class="dd right">
+        <li><a href="#contact">ทีมงานโครงการวัดสีเขียว</a></li>
+        <li><a href="#contact">อบต./เทศบาล/สพจ.</a></li>
+        <li><a href="#sitemap">แผนผังเว็บไซต์</a></li>
+      </ul>
+    </li>
+  </ul></nav>
+
+  <button class="burger" id="burger" aria-label="เมนู">☰</button>
+</div>
 </header>
 
-<main id="app">
+<!-- ============ HERO ============ -->
+<section class="hero" id="home" style="padding:0">
+  <div class="hero-bg"></div><div class="leaf a">🍃</div><div class="leaf b">🍃</div>
+  <div class="wrap"><div class="hero-in">
+    <span class="badge">🏯 มาตรฐานวัดสีเขียว · ฉบับร่างเพื่อการพัฒนา 2569</span>
+    <h1>วัดสีเขียว <em>ใบไม้เดียว</em><br>ก็ช่วยโลกให้เย็นได้</h1>
+    <p>เกณฑ์ประเมินวัดที่สะอาด ร่มรื่น ปลอดภัย และยั่งยืน ครอบคลุม 64 ตัวชี้วัด 30 คะแนน ภายใต้ 3 องค์ประกอบหลัก <b>Clean · Green · Participation</b> พร้อมระบบ N/A ที่ยืดหยุ่นตามบริบทของแต่ละวัด</p>
+    <div class="cta">
+      <a href="#downloads" class="btn btn-p">⬇ ดาวน์โหลดคู่มือ GTS</a>
+      <a href="#tools" class="btn btn-g">📝 เริ่มประเมินตนเอง</a>
+    </div>
+    <div class="hero-note">พัฒนาต่อยอดจากต้นแบบ Bangkok Clean and Green · ร่วมกับ ม.มหิดล · มจร · กรมการศาสนา · กรมเสมียนตรา</div>
+  </div></div>
+</section>
 
-<!-- ============================================================ HOME -->
-<div class="pg" id="p-home">
- <div class="hero">
-  <div class="in">
-   <span class="badge">GREEN TEMPLE STANDARD · V1-2026 · ฉบับร่างเพื่อการพัฒนา</span>
-   <h1>“วัดสีเขียว<br><em>ใบไม้เดียวก็ช่วยโลกให้เย็นได้”</em></h1>
-   <p>มาตรฐานวัดสีเขียว 3 องค์ประกอบ 64 ข้อ 30 คะแนน ครอบคลุมความสะอาด สิ่งแวดล้อม พลังงาน น้ำ ความปลอดภัย และการมีส่วนร่วมของชุมชน เพื่อวัดที่สะอาด ร่มรื่น ปลอดภัย และยั่งยืน</p>
-   <div class="btns">
-    <a href="#/downloads" class="btn btn-p">⬇ ดาวน์โหลดคู่มือ GTS</a>
-    <a href="#/tool-audit" class="btn btn-o">📝 เริ่มประเมินตนเอง</a>
-   </div>
+<!-- ============ STATS ============ -->
+<div class="stats"><div class="sgrid" id="stats">
+  <div class="stat"><div class="n" data-to="3">0</div><div class="l">องค์ประกอบหลัก</div></div>
+  <div class="stat"><div class="n" data-to="64">0</div><div class="l">ตัวชี้วัด (ข้อ)</div></div>
+  <div class="stat"><div class="n" data-to="30">0</div><div class="l">คะแนนเต็ม</div></div>
+  <div class="stat"><div class="n" data-to="4">0</div><div class="l">ระดับมาตรฐาน</div></div>
+  <div class="stat"><div class="n" data-to="120">0</div><div class="l">วัดที่เข้าร่วม</div></div>
+</div></div>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+<div class="wrap">
+  <div class="about">
+    <div class="rv">
+      <span class="kick">About Us</span>
+      <h3>ความเป็นมาและวิสัยทัศน์</h3>
+      <p>มาตรฐานวัดสีเขียว (Green Temple Standard – GTS) พัฒนาขึ้นเพื่อยกระดับวัดให้เป็นพื้นที่ที่สะอาด ร่มรื่น ปลอดภัย ประหยัดพลังงาน และเป็นศูนย์กลางการเรียนรู้ด้านสิ่งแวดล้อมของชุมชน โดยต่อยอดจากแนวคิด Bangkok Clean and Green และปรับให้ใช้ได้จริงกับวัดทุกขนาดทั่วประเทศ</p>
+      <ul>
+        <li><span class="tick">✓</span><div><b>วิสัยทัศน์</b> — ทุกวัดเป็น “พื้นที่สีเขียวของชุมชน” ที่ยั่งยืนด้วยตนเอง</div></li>
+        <li><span class="tick">✓</span><div><b>ทีมงาน</b> — คณะที่ปรึกษาวิชาการ + คณะทำงานภาคสนามจากเครือข่ายท้องถิ่น</div></li>
+        <li><span class="tick">✓</span><div><b>ยืดหยุ่น</b> — ระบบข้อ N/A รองรับวัดที่ไม่มีเมรุ ไม่มีตลาดนัด หรือไม่มีสาธารณูปโภคบางประเภท</div></li>
+      </ul>
+      <div class="doc-status">
+        <b>⚠️ สถานะของเอกสาร</b>
+        เอกสารฉบับนี้เป็น <b style="display:inline">ฉบับร่างเพื่อการพัฒนา</b> อยู่ระหว่างรับฟังความคิดเห็นจากวัดนำร่องและหน่วยงานเครือข่าย ก่อนประกาศใช้เป็นฉบับสมบูรณ์
+      </div>
+    </div>
+    <div class="about-cards rv">
+      <div class="acard"><div class="i">👥</div><b>ทีมงานและคณะทำงาน</b><p>คณะที่ปรึกษาด้านวิชาการ ผู้ทรงคุณวุฒิด้านสาธารณสุขและสิ่งแวดล้อม พร้อมคณะทำงานประจำโครงการ</p><a href="#" class="link">ดูรายชื่อคณะทำงาน →</a></div>
+      <div class="acard"><div class="i">🏛️</div><b>หน่วยงานที่เกี่ยวข้อง</b><p>ม.มหิดล · มจร · กรมเสมียนตรา · สำนักงานพระพุทธศาสนาจังหวัด · อปท.</p><a href="#partners" class="link">ดูเครือข่ายทั้งหมด →</a></div>
+      <div class="acard"><div class="i">🗺️</div><b>Road Map 6 ระยะ</b><p>แผนการพัฒนามาตรฐานตั้งแต่ยกร่าง ทดลองใช้ ขยายผล จนถึงการรับรองระดับประเทศ</p><a href="#downloads" class="link">ดูภาคผนวก ข →</a></div>
+    </div>
   </div>
- </div>
+</div>
+</section>
 
- <div class="stats"><div class="wrap"><div class="sgrid">
-   <div class="stat"><b data-n="64">0</b><span>ข้อตรวจประเมิน</span></div>
-   <div class="stat"><b data-n="30">0</b><span>คะแนนเต็ม</span></div>
-   <div class="stat"><b data-n="120">0</b><span>วัดในเครือข่าย</span></div>
-   <div class="stat"><b data-n="4">0</b><span>ระดับมาตรฐาน</span></div>
- </div></div></div>
-
- <section><div class="wrap">
-  <h2 class="sec c">3 องค์ประกอบหลักของมาตรฐาน</h2>
-  <p class="sub c">CLEAN – GREEN – PARTICIPATION รวม 64 ข้อ คะแนนเต็ม 30 คะแนน</p>
-  <div class="cards">
-   <div class="card"><div class="ico">🧹</div><div class="en">Clean</div><h3>ความสะอาดและสุขาภิบาล</h3>
-    <span class="pill">26 ข้อ (C1–C26)</span><span class="pill">12 คะแนน</span>
-    <ul><li>อาคาร/ศาสนสถาน · ห้องน้ำ</li><li>น้ำเสีย · การจัดการขยะ</li><li>พาหะนำโรค · สัตว์ในวัด</li><li>เมรุ/ฌาปนสถาน · งานวัด</li></ul>
-    <a href="#/std-clean" class="link">ดูรายละเอียด 26 ข้อ →</a></div>
-   <div class="card"><div class="ico">🌿</div><div class="en">Green</div><h3>สิ่งแวดล้อม พลังงาน น้ำ ความปลอดภัย</h3>
-    <span class="pill">25 ข้อ (G1–G25)</span><span class="pill">12 คะแนน</span>
-    <ul><li>พื้นที่สีเขียวและภูมิทัศน์</li><li>พลังงาน · น้ำ · น้ำฝน</li><li>ขยะและทรัพยากร</li><li>ความปลอดภัย · การเข้าถึง</li></ul>
-    <a href="#/std-green" class="link">ดูรายละเอียด 25 ข้อ →</a></div>
-   <div class="card"><div class="ico">🤝</div><div class="en">Participation</div><h3>นโยบายและการมีส่วนร่วม</h3>
-    <span class="pill">13 ข้อ (P1–P13)</span><span class="pill">6 คะแนน</span>
-    <ul><li>นโยบาย · คณะทำงาน</li><li>ชุมชนและอาสาสมัคร</li><li>การสื่อสารและการเรียนรู้</li><li>ติดตาม พัฒนา เครือข่าย</li></ul>
-    <a href="#/std-part" class="link">ดูรายละเอียด 13 ข้อ →</a></div>
+<!-- ============ PILLARS ============ -->
+<section class="alt" id="standard">
+<div class="wrap">
+  <div class="sec-head rv"><span class="kick">Core Structure</span>
+    <h2>โครงสร้างมาตรฐาน 3 องค์ประกอบ</h2>
+    <p>รวม 64 ตัวชี้วัด 30 คะแนน แต่ละข้อจำแนกเป็น <b>ข้อหลัก</b> และ <b>ข้อเสริม</b> พร้อมเครื่องหมาย <span class="star">*</span> สำหรับข้อที่ประเมินเมื่อวัดมีโครงสร้างพื้นฐานนั้นจริง</p>
   </div>
- </div></section>
-
- <section class="alt"><div class="wrap">
-  <h2 class="sec c">ระดับมาตรฐาน 4 ระดับ</h2>
-  <p class="sub c">จัดระดับจากคะแนนรวม 30 คะแนน หลังปรับฐานตามข้อที่ระบุ N/A</p>
-  <div class="levels">
-   <div class="lvl"><b>🏆 ผ่านระดับดีเลิศ</b><div class="tr"><div class="fl c1" data-w="100"></div></div><div class="sc">26–30</div></div>
-   <div class="lvl"><b>🥈 ผ่านระดับดีมาก</b><div class="tr"><div class="fl c2" data-w="83"></div></div><div class="sc">21–25</div></div>
-   <div class="lvl"><b>🥉 ผ่านระดับดี</b><div class="tr"><div class="fl c3" data-w="66"></div></div><div class="sc">16–20</div></div>
-   <div class="lvl"><b>⚠️ ยังไม่ผ่านมาตรฐาน</b><div class="tr"><div class="fl c4" data-w="50"></div></div><div class="sc">0–15</div></div>
+  <div class="pillars">
+    <article class="pil rv">
+      <div class="ic">🧹</div><h3>CLEAN</h3><div class="th">ความสะอาดและสุขาภิบาล</div>
+      <div class="chips"><span class="chip">26 ข้อ</span><span class="chip">12 คะแนน</span></div>
+      <ol>
+        <li>อาคาร/ศาสนสถาน <span>C1–C6</span></li>
+        <li>ห้องน้ำ/ส้วม <span>C7–C10</span></li>
+        <li>น้ำเสีย <span>C11–C14</span></li>
+        <li>ขยะ <span>C15–C20</span></li>
+        <li>พาหะนำโรค · สัตว์ <span>C21–C23</span></li>
+        <li>ความสะอาดโดยรอบ <span>C24</span></li>
+        <li>เมรุ/ฌาปนสถาน <span>C25 *</span></li>
+        <li>งานวัด/ตลาดนัด <span>C26 *</span></li>
+      </ol>
+      <a href="#" class="more">ดูรายละเอียด →</a>
+    </article>
+    <article class="pil rv">
+      <div class="ic">🌿</div><h3>GREEN</h3><div class="th">สิ่งแวดล้อม พลังงาน น้ำ ความปลอดภัย</div>
+      <div class="chips"><span class="chip">25 ข้อ</span><span class="chip">12 คะแนน</span></div>
+      <ol>
+        <li>พื้นที่สีเขียว/ภูมิทัศน์ <span>G1–G6</span></li>
+        <li>พลังงาน <span>G7–G12 *</span></li>
+        <li>น้ำ <span>G13–G15 *</span></li>
+        <li>น้ำฝน/น้ำใช้ซ้ำ <span>G16</span></li>
+        <li>ขยะและทรัพยากร <span>G17–G18</span></li>
+        <li>ความปลอดภัย <span>G19–G24</span></li>
+        <li>การเข้าถึงผู้สูงอายุ/ผู้พิการ <span>G25 *</span></li>
+      </ol>
+      <a href="#" class="more">ดูรายละเอียด →</a>
+    </article>
+    <article class="pil rv">
+      <div class="ic">🤝</div><h3>PARTICIPATION</h3><div class="th">นโยบายและการมีส่วนร่วม</div>
+      <div class="chips"><span class="chip">13 ข้อ</span><span class="chip">6 คะแนน</span></div>
+      <ol>
+        <li>นโยบาย <span>P1–P3</span></li>
+        <li>คณะทำงาน <span>P4–P6</span></li>
+        <li>ชุมชนและอาสาสมัคร <span>P7–P8</span></li>
+        <li>การสื่อสาร/การเรียนรู้ <span>P9–P10</span></li>
+        <li>การติดตามและพัฒนา <span>P11–P12</span></li>
+        <li>เครือข่ายท้องถิ่น <span>P13 *</span></li>
+      </ol>
+      <a href="#" class="more">ดูรายละเอียด →</a>
+    </article>
   </div>
- </div></section>
+</div>
+</section>
 
- <section><div class="wrap">
-  <h2 class="sec c">ขั้นตอนการตรวจประเมิน 7 ขั้น</h2>
-  <p class="sub c">ตั้งแต่สำรวจบริบทวัด จนถึงการพัฒนาอย่างต่อเนื่องด้วยวงจร PDCA</p>
+<!-- ============ N/A SYSTEM ============ -->
+<section id="na">
+<div class="wrap">
+  <div class="sec-head rv"><span class="kick">N/A System</span>
+    <h2>ระบบข้อ N/A และการคิดคะแนน</h2>
+    <p>ไม่ใช่ทุกวัดจะมีเมรุ ตลาดนัด หรือระบบประปา — GTS จึงตัดข้อที่ไม่เกี่ยวข้องออกจากฐานคะแนน เพื่อความเป็นธรรมกับวัดทุกขนาด</p>
+  </div>
+  <div class="na-grid">
+    <div class="na rv"><h4>🔎 หลักการ N/A</h4><p>ข้อที่ “ไม่เกี่ยวข้องกับบริบทของวัด” ให้ตอบ N/A และจะถูกหักออกจากตัวหารในการคำนวณ ไม่ถือเป็นการเสียคะแนน</p></div>
+    <div class="na rv"><h4><span class="star">*</span> ข้อที่มีเครื่องหมายดอกจัน</h4><p>เป็นข้อหลัก “เมื่อวัดมีโครงสร้างพื้นฐานนั้น” เช่น G7–G12 พลังงาน หรือ C25 เมรุ หากไม่มีให้ตอบ N/A ได้</p></div>
+    <div class="na rv"><h4>⚠️ ข้อควรระวัง</h4><p>หากตอบ N/A เกิน 50% ของข้อทั้งหมด ผลประเมินจะถือว่าไม่สมบูรณ์ ต้องทบทวนแบบสำรวจบริบทวัดใหม่</p></div>
+  </div>
+  <div class="formula rv">
+    สูตรคำนวณคะแนนมาตรฐาน (ปรับตาม N/A)
+    <code>คะแนนที่ได้ = ( คะแนนดิบ ÷ จำนวนข้อที่เกี่ยวข้องจริง ) × คะแนนเต็มขององค์ประกอบ</code>
+  </div>
+</div>
+</section>
+
+<!-- ============ LEVELS ============ -->
+<section class="alt" id="levels">
+<div class="wrap">
+  <div class="sec-head rv"><span class="kick">Rating Levels</span><h2>ระดับมาตรฐานและการแปลผล</h2>
+    <p>รวมคะแนนทั้ง 3 องค์ประกอบ (เต็ม 30 คะแนน) แล้วจัดระดับตามเกณฑ์ต่อไปนี้</p></div>
+  <div class="lv-list" id="levels-bar">
+    <div class="lv rv" style="--c:#1f7a3f;--c2:#6ee59a"><div class="lv-top"><div class="lv-name"><i class="dot"></i>🏆 ดีเลิศ</div><div class="lv-sc">26 – 30 คะแนน · ผ่านข้อหลักครบทุกองค์ประกอบ</div></div><div class="bar"><i data-w="100"></i></div></div>
+    <div class="lv rv" style="--c:#3aa864;--c2:#8ce9b0"><div class="lv-top"><div class="lv-name"><i class="dot"></i>🥈 ดีมาก</div><div class="lv-sc">21 – 25 คะแนน</div></div><div class="bar"><i data-w="80"></i></div></div>
+    <div class="lv rv" style="--c:#8bbf4d;--c2:#c6e79a"><div class="lv-top"><div class="lv-name"><i class="dot"></i>🥉 ดี</div><div class="lv-sc">16 – 20 คะแนน</div></div><div class="bar"><i data-w="60"></i></div></div>
+    <div class="lv rv" style="--c:#c0704a;--c2:#e6a888"><div class="lv-top"><div class="lv-name"><i class="dot"></i>⏳ ยังไม่ผ่าน</div><div class="lv-sc">0 – 15 คะแนน · จัดทำแผนปรับปรุงและประเมินซ้ำ</div></div><div class="bar"><i data-w="35"></i></div></div>
+  </div>
+</div>
+</section>
+
+<!-- ============ TOOLS ============ -->
+<section id="tools">
+<div class="wrap">
+  <div class="sec-head rv"><span class="kick">Assessment Tools</span><h2>เครื่องมือประเมิน 5 ชุด</h2>
+    <p>ครบตั้งแต่สำรวจบริบทวัด ประเมินตนเอง สรุปคะแนน จนถึงแผนปรับปรุง</p></div>
+  <div class="tools">
+    <div class="tool rv"><div class="ti">📋</div><div><b>แบบสำรวจบริบทวัดก่อนประเมิน</b><p>ขนาดวัด · ที่ตั้ง · สาธารณูปโภค · เมรุ · งานวัด · ลักษณะพิเศษ</p><a href="#" class="link">เปิดแบบสำรวจ →</a></div></div>
+    <div class="tool rv"><div class="ti">✅</div><div><b>แบบตรวจประเมินตนเอง 64 ข้อ</b><p>Self-Audit พร้อมช่องบันทึกหลักฐานและตัวอย่างการกรอก</p><a href="#" class="link">ดาวน์โหลด PDF →</a></div></div>
+    <div class="tool rv"><div class="ti">🧮</div><div><b>ใบสรุปคะแนน</b><p>คำนวณคะแนนมาตรฐานอัตโนมัติ ปรับตามจำนวนข้อ N/A</p><a href="#na" class="link">ดูสูตรคำนวณ →</a></div></div>
+    <div class="tool rv"><div class="ti">📎</div><div><b>หลักฐานประกอบการประเมิน</b><p>รายการหลักฐานขั้นต่ำ 6 รายการ เช่น ภาพถ่าย คำสั่งแต่งตั้ง บันทึกกิจกรรม</p><a href="#" class="link">ดูรายการ →</a></div></div>
+    <div class="tool rv"><div class="ti">🛠️</div><div><b>แบบแผนปรับปรุงวัดสีเขียว</b><p>วางแผนแก้ไขข้อที่ยังไม่ผ่าน พร้อมผู้รับผิดชอบและกรอบเวลา</p><a href="#" class="link">ดาวน์โหลดแบบฟอร์ม →</a></div></div>
+    <div class="tool rv"><div class="ti">📖</div><div><b>ตัวอย่างการบันทึกหลักฐาน</b><p>ตัวอย่างจริงจากวัดนำร่อง เพื่อให้บันทึกได้ถูกต้องตั้งแต่ครั้งแรก</p><a href="#" class="link">ดูตัวอย่าง →</a></div></div>
+  </div>
+</div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="alt" id="process">
+<div class="wrap">
+  <div class="sec-head rv"><span class="kick">Assessment Process</span><h2>ขั้นตอนการตรวจประเมิน 7 ขั้น</h2>
+    <p>ตั้งแต่สำรวจบริบท จนถึงการพัฒนาอย่างต่อเนื่องด้วยวงจร PDCA</p></div>
   <div class="steps">
-   <div class="step"><div class="n">0</div><h4>สำรวจบริบทวัด</h4><p>ระบุขนาด ที่ตั้ง สาธารณูปโภค เมรุ และงานวัด เพื่อกำหนดข้อ N/A</p></div>
-   <div class="step"><div class="n">1</div><h4>เตรียมการ</h4><p>แต่งตั้งคณะทำงาน ประกาศนโยบาย และรวบรวมข้อมูลพื้นฐาน</p></div>
-   <div class="step"><div class="n">2</div><h4>Self-Audit</h4><p>ประเมินตนเอง 64 ข้อ พร้อมเก็บหลักฐานประกอบ</p></div>
-   <div class="step"><div class="n">3</div><h4>ตรวจคัดกรอง</h4><p>ตรวจทานความครบถ้วนและความสมเหตุสมผลของข้อ N/A</p></div>
+    <div class="step rv"><div class="no">0</div><h4>สำรวจบริบทวัด</h4><p>ระบุขนาด ที่ตั้ง สาธารณูปโภค เพื่อกำหนดข้อ N/A ล่วงหน้า</p></div>
+    <div class="step rv"><div class="no">1</div><h4>เตรียมการ</h4><p>ตั้งคณะทำงาน ประกาศนโยบาย และชี้แจงผู้เกี่ยวข้อง</p></div>
+    <div class="step rv"><div class="no">2</div><h4>Self-Audit</h4><p>ประเมินตนเอง 64 ข้อ พร้อมรวบรวมหลักฐาน</p></div>
+    <div class="step rv"><div class="no">3</div><h4>ตรวจคัดกรอง</h4><p>เครือข่ายท้องถิ่นตรวจเอกสารและความครบถ้วนของหลักฐาน</p></div>
+    <div class="step rv"><div class="no">4</div><h4>ตรวจประเมินภายนอก</h4><p>ลงพื้นที่จริงแบบกระจายกำลังผ่านเครือข่ายท้องถิ่น</p></div>
+    <div class="step rv"><div class="no">5</div><h4>สรุปผลและจัดระดับ</h4><p>คำนวณคะแนนปรับ N/A แล้วจัดระดับ ดี / ดีมาก / ดีเลิศ</p></div>
+    <div class="step rv"><div class="no">6</div><h4>พัฒนาต่อเนื่อง</h4><p>วงจร Plan-Do-Check-Act และประเมินซ้ำตามรอบ</p></div>
+    <div class="step rv" style="background:var(--g700);color:#fff;border-color:var(--g700)"><div class="no" style="background:rgba(255,255,255,.2)">→</div><h4 style="color:#fff">พร้อมเริ่มแล้วใช่ไหม?</h4><p style="color:#cfe9d8">เริ่มจากขั้นที่ 0 ได้เลย ใช้เวลาประมาณ 20 นาที</p><a href="#tools" class="link" style="color:#9ff0b8">เริ่มสำรวจบริบท →</a></div>
   </div>
-  <div class="steps" style="margin-top:18px">
-   <div class="step"><div class="n">4</div><h4>ตรวจประเมินภายนอก</h4><p>เครือข่ายท้องถิ่นแบบกระจายกำลังร่วมตรวจพื้นที่จริง</p></div>
-   <div class="step"><div class="n">5</div><h4>สรุปผลและจัดระดับ</h4><p>คำนวณคะแนนปรับฐาน N/A และจัดระดับ 4 ระดับ</p></div>
-   <div class="step"><div class="n">6</div><h4>พัฒนาต่อเนื่อง</h4><p>จัดทำแผนปรับปรุง ดำเนินการ ติดตาม และประเมินซ้ำ (PDCA)</p></div>
-   <div class="step" style="background:var(--g900);color:#cfe5da;border:0">
-    <div class="n" style="background:var(--g300);color:var(--g900)">★</div>
-    <h4 style="color:#fff">ดูรายละเอียดทั้งหมด</h4><p style="color:#cfe5da">พร้อมผู้รับผิดชอบและผลลัพธ์ของแต่ละขั้น</p>
-    <a href="#/process" class="link" style="color:var(--g300)">ไปที่หน้าขั้นตอน →</a></div>
-  </div>
- </div></section>
-
- <section class="alt"><div class="wrap"><div class="two2">
-  <div class="panel"><h3>📢 ข่าวสารและกิจกรรม</h3>
-   <div class="item"><div class="date">15–16 มกราคม 2569</div><h4>อบรมเชิงปฏิบัติการวัดสีเขียว รุ่นที่ 1</h4><p>การจัดการขยะครบวงจรและการประหยัดพลังงาน สำหรับพระสงฆ์และผู้นำชุมชน</p></div>
-   <div class="item"><div class="date">3 กุมภาพันธ์ 2569</div><h4>เปิดรับสมัครวัดเข้าร่วมประเมิน รอบที่ 2</h4><p>ส่งแบบสำรวจบริบทวัดผ่านสำนักงานพระพุทธศาสนาจังหวัด</p></div>
-   <div class="item"><div class="date">20 กุมภาพันธ์ 2569</div><h4>ประกาศใช้มาตรฐาน GTS เวอร์ชัน 1 ปี 2026</h4><p>ปรับโครงสร้างเป็น 64 ข้อ 30 คะแนน พร้อมระบบ N/A ตามบริบทวัด</p></div>
-   <a href="#/news" class="link">ดูข่าวทั้งหมด →</a></div>
-  <div class="panel"><h3>🏆 ผลประเมินล่าสุด</h3>
-   <div class="item"><div class="date">นครปฐม · ก.พ. 2569</div><h4>วัดธรรมาราม — ผ่านระดับดีเลิศ</h4><p>คะแนน 28/30 (Clean 11 · Green 11 · Participation 6)</p></div>
-   <div class="item"><div class="date">นครปฐม · ก.พ. 2569</div><h4>วัดป่าเจริญธรรม — ผ่านระดับดีมาก</h4><p>คะแนน 24/30 (Clean 10 · Green 9 · Participation 5)</p></div>
-   <div class="item"><div class="date">นครปฐม · ม.ค. 2569</div><h4>วัดสระสี่มุม — ผ่านระดับดี</h4><p>คะแนน 19/30 (Clean 8 · Green 7 · Participation 4)</p></div>
-   <a href="#/results" class="link">ดูผลประเมินทั้งหมด →</a></div>
- </div></div></section>
-
- <section><div class="wrap">
-  <h2 class="sec c">เครือข่ายและหน่วยงานพันธมิตร</h2>
-  <p class="sub c">ความร่วมมือระหว่างสถาบันการศึกษา คณะสงฆ์ ภาครัฐ และชุมชน</p>
-  <div class="partners">
-   <div class="pt">มหาวิทยาลัยมหิดล<small>ผู้รับผิดชอบโครงการ</small></div>
-   <div class="pt">มจร<small>มหาจุฬาลงกรณราชวิทยาลัย</small></div>
-   <div class="pt">กรมเสมียนตรา<small>หน่วยงานร่วมสนับสนุน</small></div>
-   <div class="pt">สพจ. นครปฐม<small>สำนักงานพระพุทธศาสนาจังหวัด</small></div>
-   <div class="pt">อบต. / เทศบาล<small>องค์กรปกครองส่วนท้องถิ่น</small></div>
-   <div class="pt">อสม. และผู้นำชุมชน<small>เครือข่ายตรวจประเมินพื้นที่</small></div>
-  </div>
- </div></section>
 </div>
+</section>
 
-<!-- ============================================================ ABOUT -->
-<div class="pg" id="p-about">
- <div class="phead"><div class="wrap"><div class="crumb">หน้าแรก › เกี่ยวกับเรา</div>
-  <h1>ความเป็นมาและวิสัยทัศน์</h1><p>ที่มาของมาตรฐานวัดสีเขียว และทิศทางการพัฒนาวัดให้เป็นพื้นที่ต้นแบบด้านสิ่งแวดล้อมของชุมชน</p></div></div>
- <section><div class="wrap">
-  <h3 class="h3">ความเป็นมา</h3>
-  <p>วัดเป็นศูนย์กลางของชุมชนไทยมาอย่างยาวนาน ทั้งในฐานะศาสนสถาน สถานที่จัดกิจกรรมประเพณี และพื้นที่สาธารณะที่ผู้คนใช้ร่วมกัน การเปลี่ยนแปลงของเมือง ปริมาณขยะ การใช้พลังงาน และปัญหาสุขาภิบาล จึงส่งผลต่อวัดโดยตรง มาตรฐานวัดสีเขียว (Green Temple Standard – GTS) จึงถูกพัฒนาขึ้นเพื่อเป็นเครื่องมือที่วัดสามารถใช้ตรวจสอบและยกระดับตนเองได้จริง ด้วยภาษาที่เข้าใจง่ายและสอดคล้องกับบริบทของวัดไทย</p>
-  <h3 class="h3">วิสัยทัศน์</h3>
-  <div class="note"><b>“วัดสะอาด ร่มรื่น ปลอดภัย เป็นมิตรกับสิ่งแวดล้อม และเป็นแหล่งเรียนรู้ของชุมชน”</b><br>
-   โดยยึดหลักการมีส่วนร่วมของพระสงฆ์ ญาติโยม และหน่วยงานท้องถิ่น เพื่อให้การพัฒนาเกิดขึ้นอย่างต่อเนื่องและยั่งยืน ไม่ใช่เพียงเพื่อผ่านการประเมินครั้งเดียว</div>
-  <h3 class="h3">วัตถุประสงค์</h3>
-  <div class="cards two" style="margin-top:14px">
-   <div class="card"><div class="ico">📏</div><h3>สร้างเกณฑ์กลาง</h3><p>พัฒนาเกณฑ์มาตรฐานที่วัดทุกขนาดใช้ได้จริง มีระบบ N/A รองรับความแตกต่างของบริบท</p></div>
-   <div class="card"><div class="ico">🧭</div><h3>ให้เครื่องมือที่ใช้ได้เอง</h3><p>จัดทำแบบสำรวจบริบท แบบ Self-Audit ใบสรุปคะแนน และแบบแผนปรับปรุงที่วัดดำเนินการได้เอง</p></div>
-   <div class="card"><div class="ico">🤝</div><h3>เชื่อมเครือข่ายท้องถิ่น</h3><p>ใช้กลไก สพจ. อปท. และ อสม. ร่วมตรวจประเมินแบบกระจายกำลัง ลดภาระส่วนกลาง</p></div>
-   <div class="card"><div class="ico">📚</div><h3>ขยายผลเป็นแหล่งเรียนรู้</h3><p>ยกระดับวัดต้นแบบให้เป็นศูนย์เรียนรู้ด้านสิ่งแวดล้อมสำหรับโรงเรียนและชุมชนโดยรอบ</p></div>
+<!-- ============ DOWNLOADS ============ -->
+<section id="downloads">
+<div class="wrap">
+  <div class="sec-head rv"><span class="kick">Downloads</span><h2>เอกสารดาวน์โหลด</h2>
+    <p>แบบฟอร์มต้นแบบและคู่มือฉบับเต็ม พร้อมใช้งานทันที</p></div>
+  <div class="tools">
+    <div class="tool rv"><div class="ti">📜</div><div><b>ตัวอย่างนโยบายวัดสีเขียว</b><p>ร่างประกาศนโยบายที่วัดปรับใช้ได้ทันที</p><a href="#" class="link">DOCX · PDF →</a></div></div>
+    <div class="tool rv"><div class="ti">🖋️</div><div><b>แบบแต่งตั้งคณะทำงาน</b><p>คำสั่งแต่งตั้งคณะทำงานวัดสีเขียว พร้อมโครงสร้างหน้าที่</p><a href="#" class="link">DOCX · PDF →</a></div></div>
+    <div class="tool rv"><div class="ti">🏅</div><div><b>แบบสรุปผล + ใบรับรองต้นแบบ</b><p>เอกสารสรุปผลประเมินและใบรับรองระดับมาตรฐาน</p><a href="#" class="link">PDF →</a></div></div>
+    <div class="tool rv"><div class="ti">📕</div><div><b>คู่มือมาตรฐาน GTS ฉบับเต็ม</b><p>เนื้อหาครบ 25 หน้า รวมเกณฑ์ 64 ข้อและวิธีให้คะแนน</p><a href="#" class="link">ดาวน์โหลด PDF →</a></div></div>
+    <div class="tool rv"><div class="ti">📚</div><div><b>ภาคผนวก ก–ค</b><p>ที่มาจาก Bangkok Clean and Green · Road Map 6 ระยะ · ตารางสรุปการเปลี่ยนแปลง</p><a href="#" class="link">ดูภาคผนวก →</a></div></div>
+    <div class="tool rv"><div class="ti">🗂️</div><div><b>ชุดเอกสารทั้งหมด (ZIP)</b><p>รวมทุกแบบฟอร์มในไฟล์เดียว สะดวกสำหรับผู้ประสานงาน</p><a href="#" class="link">ดาวน์โหลดทั้งชุด →</a></div></div>
   </div>
-  <h3 class="h3">หลักการออกแบบมาตรฐาน</h3>
-  <div class="tl">
-   <div class="tli"><b>ยืดหยุ่นตามบริบท</b><span>ข้อที่ไม่เกี่ยวข้องกับวัด เช่น ไม่มีเมรุ ไม่มีงานวัด สามารถระบุ N/A และตัดออกจากฐานคะแนนได้</span></div>
-   <div class="tli"><b>ตรวจได้ด้วยสายตาและหลักฐานเบา</b><span>เน้นสิ่งที่สังเกตได้จริงในพื้นที่ ไม่ต้องใช้เครื่องมือวัดราคาแพงหรือเอกสารซับซ้อน</span></div>
-   <div class="tli"><b>ให้ความสำคัญกับข้อหลักก่อน</b><span>แยกข้อหลักที่วัดทุกแห่งควรทำได้ ออกจากข้อเสริมที่เป็นการยกระดับ</span></div>
-   <div class="tli"><b>มุ่งพัฒนามากกว่าตัดสิน</b><span>ผลประเมินเชื่อมกับแบบแผนปรับปรุงเสมอ เพื่อให้เกิดวงจร PDCA อย่างต่อเนื่อง</span></div>
+</div>
+</section>
+
+<!-- ============ NEWS + RESULTS ============ -->
+<section class="alt" id="news">
+<div class="wrap two">
+  <div class="panel rv">
+    <h3><span>📣 ข่าวสารและกิจกรรม</span><a href="#">ดูทั้งหมด →</a></h3>
+    <div class="card"><div class="date"><b>15</b><span>ม.ค. 69</span></div><div>
+      <h4>อบรมเชิงปฏิบัติการผู้ตรวจประเมินวัดสีเขียว รุ่นที่ 5</h4>
+      <p>15–16 มกราคม 2569 ณ ศูนย์ประชุมมหิดล ศาลายา (รับ 80 ที่นั่ง)</p><a href="#" class="link">อ่านต่อ →</a></div></div>
+    <div class="card"><div class="date"><b>02</b><span>ก.พ. 69</span></div><div>
+      <h4>เปิดรับสมัครวัดเข้าร่วมโครงการ รอบ 2/2569</h4>
+      <p>ยื่นแบบประเมินตนเองออนไลน์ได้ถึง 31 มีนาคม 2569</p><a href="#" class="link">อ่านต่อ →</a></div></div>
+    <div class="card"><div class="date"><b>20</b><span>มี.ค. 69</span></div><div>
+      <h4>ประชุมเครือข่ายวัดสีเขียวระดับภูมิภาค ครั้งที่ 2</h4>
+      <p>แลกเปลี่ยนบทเรียนกับ อปท. และสำนักงานพระพุทธศาสนาจังหวัด</p><a href="#" class="link">อ่านต่อ →</a></div></div>
   </div>
- </div></section>
-</div>
 
-<div class="pg" id="p-about-team">
- <div class="phead"><div class="wrap"><div class="crumb">หน้าแรก › เกี่ยวกับเรา › ทีมงาน</div>
-  <h1>ทีมงานที่ปรึกษาและคณะทำงาน</h1><p>โครงสร้างการทำงานร่วมระหว่างคณะที่ปรึกษาวิชาการ คณะทำงานพัฒนามาตรฐาน และคณะทำงานระดับวัด</p></div></div>
- <section><div class="wrap">
-  <h3 class="h3">คณะที่ปรึกษา</h3>
-  <div class="cards">
-   <div class="card"><div class="ico">🎓</div><h3>ที่ปรึกษาด้านวิชาการ</h3><p>ผู้เชี่ยวชาญด้านอนามัยสิ่งแวดล้อม สุขาภิบาล และการจัดการทรัพยากร จากสถาบันการศึกษา</p></div>
-   <div class="card"><div class="ico">🛕</div><h3>ที่ปรึกษาฝ่ายคณะสงฆ์</h3><p>พระเถระและผู้แทนคณะสงฆ์ ให้คำแนะนำด้านความเหมาะสมกับพระธรรมวินัยและวิถีปฏิบัติของวัด</p></div>
-   <div class="card"><div class="ico">🏛️</div><h3>ที่ปรึกษาภาครัฐ</h3><p>ผู้แทนหน่วยงานด้านพระพุทธศาสนา สิ่งแวดล้อม และองค์กรปกครองส่วนท้องถิ่น</p></div>
+  <div class="panel rv" id="results">
+    <h3><span>✅ ผลการประเมินล่าสุด</span><a href="#map">ดูแผนที่ 🗺️</a></h3>
+    <div class="card"><div class="sbadge">28<br><small style="font-size:.68rem">/30</small></div><div>
+      <span class="tag">ดีเลิศ</span><h4>วัดธรรมาราม · จ.นครปฐม</h4>
+      <p>โดดเด่นด้านคัดแยกขยะและพื้นที่สีเขียวกว่า 6 ไร่</p><a href="#" class="link">ดูรายละเอียด →</a></div></div>
+    <div class="card"><div class="sbadge" style="background:linear-gradient(135deg,#6fbf8e,#3aa864)">24<br><small style="font-size:.68rem">/30</small></div><div>
+      <span class="tag">ดีมาก</span><h4>วัดป่าสุขใจ · จ.เชียงใหม่</h4>
+      <p>ต้นแบบพลังงานแสงอาทิตย์และปุ๋ยหมักจากใบไม้</p><a href="#" class="link">ดูรายละเอียด →</a></div></div>
+    <div class="card"><div class="sbadge" style="background:linear-gradient(135deg,#b6d97e,#8bbf4d)">18<br><small style="font-size:.68rem">/30</small></div><div>
+      <span class="tag">ดี</span><h4>วัดบางบัวทอง · จ.นนทบุรี</h4>
+      <p>อยู่ระหว่างดำเนินแผนปรับปรุงด้านความปลอดภัย (G19–G24)</p><a href="#" class="link">ดูรายละเอียด →</a></div></div>
   </div>
-  <h3 class="h3">คณะทำงานพัฒนามาตรฐาน</h3>
-  <div class="tw"><table>
-   <thead><tr><th>บทบาท</th><th>หน้าที่หลัก</th><th>สังกัด/ที่มา</th></tr></thead>
-   <tbody>
-    <tr><td><b>หัวหน้าโครงการ</b></td><td>กำหนดทิศทาง ควบคุมคุณภาพวิชาการ และประสานหน่วยงานหลัก</td><td>มหาวิทยาลัยมหิดล</td></tr>
-    <tr><td><b>ผู้พัฒนาเกณฑ์</b></td><td>ยกร่างเกณฑ์ 64 ข้อ ระบบคะแนน และหลักการ N/A</td><td>คณะทำงานวิชาการ</td></tr>
-    <tr><td><b>ผู้พัฒนาเครื่องมือ</b></td><td>จัดทำแบบสำรวจบริบท Self-Audit ใบสรุปคะแนน และแบบแผนปรับปรุง</td><td>คณะทำงานวิชาการ</td></tr>
-    <tr><td><b>ผู้ประสานเครือข่าย</b></td><td>ประสาน สพจ. อปท. อสม. และวัดนำร่องในพื้นที่</td><td>คณะทำงานภาคสนาม</td></tr>
-    <tr><td><b>ฝ่ายสื่อสารและเผยแพร่</b></td><td>จัดทำสื่อ ป้ายนิเทศ คู่มือ และช่องทางออนไลน์</td><td>คณะทำงานสื่อสาร</td></tr>
-   </tbody></table></div>
-  <h3 class="h3">คณะทำงานระดับวัด (ที่วัดต้องจัดตั้ง)</h3>
-  <div class="note">ตามเกณฑ์ <b>P4–P6</b> วัดต้องมีคำสั่งแต่งตั้งคณะทำงานวัดสีเขียวเป็นลายลักษณ์อักษร ระบุผู้ประสานงานหลัก และมีการประชุมพร้อมบันทึกอย่างน้อยปีละ 2 ครั้ง โดยองค์ประกอบที่แนะนำ ได้แก่ เจ้าอาวาส (ที่ปรึกษา) · พระผู้รับผิดชอบ · ไวยาวัจกร · ผู้แทนชุมชน · ผู้แทน อปท. หรือ อสม.</div>
- </div></section>
 </div>
+</section>
 
-<div class="pg" id="p-about-partners">
- <div class="phead"><div class="wrap"><div class="crumb">หน้าแรก › เกี่ยวกับเรา › พันธมิตร</div>
-  <h1>หน่วยงานพันธมิตร</h1><p>เครือข่ายความร่วมมือที่สนับสนุนการพัฒนาและขับเคลื่อนมาตรฐานวัดสีเขียว</p></div></div>
- <section><div class="wrap">
-  <div class="tw"><table>
-   <thead><tr><th>หน่วยงาน</th><th>บทบาทในโครงการ</th><th>ระดับ</th></tr></thead>
-   <tbody>
-    <tr><td><b>มหาวิทยาลัยมหิดล</b></td><td>ผู้รับผิดชอบหลัก พัฒนาเกณฑ์ เครื่องมือ และคู่มือมาตรฐาน</td><td><span class="tag t2">ส่วนกลาง</span></td></tr>
-    <tr><td><b>มหาวิทยาลัยมหาจุฬาลงกรณราชวิทยาลัย (มจร)</b></td><td>ที่ปรึกษาด้านพระพุทธศาสนา พัฒนาเนื้อหา Eco-monk และการสื่อสารธรรมะสิ่งแวดล้อม</td><td><span class="tag t2">ส่วนกลาง</span></td></tr>
-    <tr><td><b>กรมเสมียนตรา</b></td><td>หน่วยงานร่วมสนับสนุนการประสานงานและการขยายผลเชิงนโยบาย</td><td><span class="tag t2">ส่วนกลาง</span></td></tr>
-    <tr><td><b>สำนักงานพระพุทธศาสนาจังหวัด (สพจ.)</b></td><td>ประสานวัดในพื้นที่ รับสมัคร และร่วมตรวจประเมินภายนอก</td><td><span class="tag t3">จังหวัด</span></td></tr>
-    <tr><td><b>องค์กรปกครองส่วนท้องถิ่น (อบต./เทศบาล)</b></td><td>สนับสนุนระบบเก็บขนขยะ สาธารณูปโภค และร่วมตรวจประเมิน</td><td><span class="tag t3">ท้องถิ่น</span></td></tr>
-    <tr><td><b>อาสาสมัครสาธารณสุขประจำหมู่บ้าน (อสม.)</b></td><td>ตรวจสุขาภิบาล ลูกน้ำยุงลาย และร่วมสำรวจพื้นที่จริง</td><td><span class="tag t3">ท้องถิ่น</span></td></tr>
-    <tr><td><b>โรงเรียนและชุมชนรอบวัด</b></td><td>ร่วมกิจกรรมจิตอาสา ปลูกต้นไม้ และเรียนรู้ในวัดต้นแบบ</td><td><span class="tag t4">ชุมชน</span></td></tr>
-   </tbody></table></div>
-  <h3 class="h3">รูปแบบความร่วมมือ</h3>
-  <div class="cards">
-   <div class="card"><div class="ico">📖</div><h3>วิชาการ</h3><p>พัฒนาเกณฑ์ หลักสูตรอบรม และคู่มือประกอบการดำเนินงาน</p></div>
-   <div class="card"><div class="ico">🧰</div><h3>ทรัพยากร</h3><p>สนับสนุนถังขยะแยกประเภท หลอด LED โซลาร์เซลล์ และป้ายนิเทศ</p></div>
-   <div class="card"><div class="ico">🧑‍🤝‍🧑</div><h3>กำลังคน</h3><p>เครือข่ายตรวจประเมินแบบกระจายกำลังในระดับพื้นที่</p></div>
+<!-- ============ MAP ============ -->
+<section id="map">
+<div class="wrap">
+  <div class="sec-head rv"><span class="kick">Green Map</span><h2>แผนที่วัดสีเขียวทั่วประเทศ</h2>
+    <p>แสดงตำแหน่งวัดที่ผ่านเกณฑ์ พร้อมกรองตามระดับ ดี / ดีมาก / ดีเลิศ</p></div>
+  <div class="rv" style="border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);border:1px solid var(--line)">
+    <iframe title="แผนที่วัดสีเขียว" src="https://www.openstreetmap.org/export/embed.html?bbox=97.3%2C5.6%2C105.7%2C20.5&layer=mapnik" style="width:100%;height:440px;border:0"></iframe>
   </div>
- </div></section>
-</div>
-
-<div class="pg" id="p-about-status">
- <div class="phead"><div class="wrap"><div class="crumb">หน้าแรก › เกี่ยวกับเรา › สถานะเอกสาร</div>
-  <h1>สถานะของเอกสาร</h1><p>ข้อมูลเวอร์ชัน ขอบเขตการใช้งาน และแนวทางการให้ข้อเสนอแนะ</p></div></div>
- <section><div class="wrap">
-  <div class="note"><b>⚠️ เอกสารฉบับร่างเพื่อการพัฒนา (Draft for Development)</b><br>
-   คู่มือมาตรฐานวัดสีเขียว V1-2026 อยู่ระหว่างการทดลองใช้และรับฟังความคิดเห็นจากวัดนำร่องและหน่วยงานเครือข่าย เกณฑ์ คะแนน และถ้อยคำบางส่วนอาจมีการปรับปรุงก่อนประกาศใช้เป็นฉบับสมบูรณ์ จึงยังไม่ควรนำไปอ้างอิงเพื่อการรับรองอย่างเป็นทางการ</div>
-  <h3 class="h3">ข้อมูลเวอร์ชัน</h3>
-  <div class="tw"><table>
-   <thead><tr><th>รายการ</th><th>รายละเอียด</th></tr></thead>
-   <tbody>
-    <tr><td>ชื่อเอกสาร</td><td>มาตรฐานวัดสีเขียว (Green Temple Standard)</td></tr>
-    <tr><td>เวอร์ชัน</td><td>V1 – 2026</td></tr>
-    <tr><td>สถานะ</td><td><span class="tag t1">ฉบับร่าง / เพื่อการพัฒนา</span></td></tr>
-    <tr><td>โครงสร้างเกณฑ์</td><td>3 องค์ประกอบ · 64 ข้อ · 30 คะแนน</td></tr>
-    <tr><td>ขอบเขตการใช้</td><td>วัดนำร่องและวัดที่สมัครใจเข้าร่วม เพื่อการประเมินตนเองและพัฒนา</td></tr>
-    <tr><td>รอบทบทวน</td><td>ทบทวนหลังสิ้นสุดรอบประเมินนำร่อง</td></tr>
-   </tbody></table></div>
-  <h3 class="h3">การให้ข้อเสนอแนะ</h3>
-  <p>คณะทำงานเปิดรับข้อเสนอแนะจากพระสงฆ์ ผู้ประเมิน และหน่วยงานท้องถิ่น โดยเฉพาะประเด็นความเหมาะสมของเกณฑ์กับวัดขนาดเล็ก ความชัดเจนของถ้อยคำ และความสมเหตุสมผลของข้อ N/A</p>
-  <div style="margin-top:18px"><a href="#/contact" class="btn btn-p">✉️ ส่งข้อเสนอแนะถึงคณะทำงาน</a></div>
- </div></section>
-</div>
-
-<!-- ============================================================ STANDARD OVERVIEW -->
-<div class="pg" id="p-std">
- <div class="phead"><div class="wrap"><div class="crumb">หน้าแรก › มาตรฐานวัดสีเขียว</div>
-  <h1>โครงสร้างและภาพรวมมาตรฐาน</h1><p>3 องค์ประกอบ 64 ข้อ 30 คะแนน พร้อมระบบ N/A ที่ยืดหยุ่นตามบริบทของแต่ละวัด</p></div></div>
- <section><div class="wrap">
-  <div class="tw"><table>
-   <thead><tr><th>องค์ประกอบ</th><th>ขอบเขต</th><th>รหัส</th><th>จำนวนข้อ</th><th>คะแนน</th><th>สัดส่วน</th></tr></thead>
-   <tbody>
-    <tr><td><b>🧹 CLEAN</b></td><td>ความสะอาดและสุขาภิบาล</td><td class="id">C1–C26</td><td>26</td><td><b>12</b></td><td>40%</td></tr>
-    <tr><td><b>🌿 GREEN</b></td><td>สิ่งแวดล้อม พลังงาน น้ำ และความปลอดภัย</td><td class="id">G1–G25</td><td>25</td><td><b>12</b></td><td>40%</td></tr>
-    <tr><td><b>🤝 PARTICIPATION</b></td><td>นโยบายและการมีส่วนร่วม</td><td class="id">P1–P13</td><td>13</td><td><b>6</b></td><td>20%</td></tr>
-    <tr style="background:var(--g50)"><td colspan="3"><b>รวมทั้งสิ้น</b></td><td><b>64</b></td><td><b>30</b></td><td>100%</td></tr>
-   </tbody></table></div>
-  <h3 class="h3">กลุ่มย่อยของแต่ละองค์ประกอบ</h3>
-  <div class="cards">
-   <div class="card"><div class="ico">🧹</div><div class="en">Clean · 26 ข้อ</div><h3>ความสะอาดและสุขาภิบาล</h3>
-    <ul><li>อาคาร/ศาสนสถาน (C1–C6)</li><li>ห้องน้ำ/ส้วม (C7–C10)</li><li>น้ำเสีย (C11–C14)</li><li>ขยะ (C15–C20)</li><li>พาหะนำโรค (C21–C22)</li><li>สัตว์ (C23)</li><li>ความสะอาดโดยรอบ (C24)</li><li>เมรุ/ฌาปนสถาน (C25)*</li><li>งานวัด/ตลาดนัด (C26)*</li></ul>
-    <a href="#/std-clean" class="link">เปิดตารางเกณฑ์ →</a></div>
-   <div class="card"><div class="ico">🌿</div><div class="en">Green · 25 ข้อ</div><h3>สิ่งแวดล้อม พลังงาน น้ำ ความปลอดภัย</h3>
-    <ul><li>พื้นที่สีเขียวและภูมิทัศน์ (G1–G6)</li><li>พลังงาน (G7–G12)*</li><li>น้ำ (G13–G15)*</li><li>น้ำฝน/น้ำใช้ซ้ำ (G16)</li><li>ขยะและทรัพยากร (G17–G18)</li><li>ความปลอดภัย (G19–G24)</li><li>การเข้าถึงผู้สูงอายุ/ผู้พิการ (G25)*</li></ul>
-    <a href="#/std-green" class="link">เปิดตารางเกณฑ์ →</a></div>
-   <div class="card"><div class="ico">🤝</div><div class="en">Participation · 13 ข้อ</div><h3>นโยบายและการมีส่วนร่วม</h3>
-    <ul><li>นโยบาย (P1–P3)</li><li>คณะทำงาน (P4–P6)</li><li>ชุมชนและอาสาสมัคร (P7–P8)</li><li>การสื่อสารและการเรียนรู้ (P9–P10)</li><li>การติดตามและพัฒนา (P11–P12)</li><li>เครือข่ายท้องถิ่น (P13)*</li></ul>
-    <a href="#/std-part" class="link">เปิดตารางเกณฑ์ →</a></div>
+  <div style="display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-top:20px;font-family:'Sarabun';font-size:.9rem">
+    <span><i class="dot" style="--c:#1f7a3f;display:inline-block;vertical-align:middle;margin-right:6px"></i>ดีเลิศ · 18 วัด</span>
+    <span><i class="dot" style="--c:#3aa864;display:inline-block;vertical-align:middle;margin-right:6px"></i>ดีมาก · 41 วัด</span>
+    <span><i class="dot" style="--c:#8bbf4d;display:inline-block;vertical-align:middle;margin-right:6px"></i>ดี · 37 วัด</span>
+    <span><i class="dot" style="--c:#c0704a;display:inline-block;vertical-align:middle;margin-right:6px"></i>อยู่ระหว่างปรับปรุง · 24 วัด</span>
   </div>
-  <div class="note" style="margin-top:26px">* หมายถึงกลุ่มข้อที่ <b>อาจระบุ N/A ได้</b> หากไม่สอดคล้องกับบริบทจริงของวัด เช่น วัดที่ไม่มีเมรุ ไม่มีงานวัด หรือไม่มีระบบประปา — ดูรายละเอียดที่ <a href="#/std-score" class="link">ระบบให้คะแนนและข้อ N/A</a></div>
- </div></section>
 </div>
+</section>
 
-<!-- ============================================================ CLEAN -->
-<div class="pg" id="p-std-clean">
- <div class="phead"><div class="wrap"><div class="crumb">หน้าแรก › มาตรฐาน › องค์ประกอบที่ 1</div>
-  <span class="badge">CLEAN</span><h1>ความสะอาดและสุขาภิบาล</h1><p>26 ข้อ (C1–C26) · 12 คะแนน · เน้นสิ่งที่ตรวจสอบได้ด้วยการสังเกตในพื้นที่จริง</p></div></div>
- <section><div class="wrap">
-  <h3 class="h3">อาคาร/ศาสนสถาน (C1–C6)</h3>
-  <div class="tw"><table><thead><tr><th style="width:70px">รหัส</th><th>เกณฑ์การประเมิน</th><th style="width:120px">ประเภท</th></tr></thead><tbody>
-   <tr><td class="id">C1</td><td>อุโบสถ วิหาร และศาลาสะอาด เป็นระเบียบ ไม่มีฝุ่นหรือหยากไย่สะสม</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">C2</td><td>ลานวัดและทางเดินสะอาด ไม่ลื่น ไม่มีเศษวัสดุกีดขวาง</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">C3</td><td>กุฏิสงฆ์สะอาด เป็นระเบียบ อากาศถ่ายเทดี</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">C4</td><td>ศาลาการเปรียญ/หอฉัน มีการทำความสะอาดสม่ำเสมอและมีผู้รับผิดชอบ</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">C5</td><td>โรงครัว/พื้นที่ปรุงอาหารถูกสุขลักษณะ ภาชนะสะอาด มีการจัดเก็บที่เหมาะสม</td><td><span class="tag t3">ข้อเสริม</span> <span class="na">N/A ได้</span></td></tr>
-   <tr><td class="id">C6</td><td>จุดบริการน้ำดื่มสะอาด ปลอดภัย มีการทำความสะอาดภาชนะและตรวจสอบคุณภาพ</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-  </tbody></table></div>
-  <h3 class="h3">ห้องน้ำ/ส้วม (C7–C10)</h3>
-  <div class="tw"><table><thead><tr><th style="width:70px">รหัส</th><th>เกณฑ์การประเมิน</th><th style="width:120px">ประเภท</th></tr></thead><tbody>
-   <tr><td class="id">C7</td><td>ห้องส้วมสะอาด ไม่มีกลิ่นเหม็น พื้นแห้ง ไม่มีคราบสกปรก</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">C8</td><td>จำนวนห้องส้วมเพียงพอกับผู้ใช้ และแยกสำหรับพระสงฆ์ ชาย และหญิง</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">C9</td><td>มีอุปกรณ์ครบถ้วน ได้แก่ น้ำใช้ สบู่ล้างมือ ถังขยะมีฝาปิด และแสงสว่างเพียงพอ</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">C10</td><td>ระบบบำบัดสิ่งปฏิกูล/บ่อเกรอะอยู่ในสภาพดี ไม่รั่วซึม ไม่ล้น มีการสูบตามรอบ</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-  </tbody></table></div>
-  <h3 class="h3">น้ำเสีย (C11–C14)</h3>
-  <div class="tw"><table><thead><tr><th style="width:70px">รหัส</th><th>เกณฑ์การประเมิน</th><th style="width:120px">ประเภท</th></tr></thead><tbody>
-   <tr><td class="id">C11</td><td>มีระบบรวบรวมน้ำเสียจากโรงครัว เช่น บ่อดักไขมัน และมีการทำความสะอาดสม่ำเสมอ</td><td><span class="tag t3">ข้อเสริม</span> <span class="na">N/A ได้</span></td></tr>
-   <tr><td class="id">C12</td><td>ไม่มีน้ำขังเน่าเสียหรือส่งกลิ่นรบกวนในพื้นที่วัด</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">C13</td><td>รางระบายน้ำไม่อุดตัน มีการลอกและทำความสะอาดตามรอบ</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">C14</td><td>ไม่ระบายน้ำเสียลงสู่แหล่งน้ำสาธารณะโดยตรงโดยไม่ผ่านการบำบัด</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-  </tbody></table></div>
-  <h3 class="h3">ขยะ (C15–C20)</h3>
-  <div class="tw"><table><thead><tr><th style="width:70px">รหัส</th><th>เกณฑ์การประเมิน</th><th style="width:120px">ประเภท</th></tr></thead><tbody>
-   <tr><td class="id">C15</td><td>มีถังขยะแยกประเภทอย่างน้อย 3 ประเภท พร้อมป้ายระบุชัดเจน</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">C16</td><td>ถังขยะมีฝาปิด สภาพดี จำนวนเพียงพอ และวางในจุดที่เหมาะสม</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">C17</td><td>มีจุดพักขยะรวมที่มิดชิด ไม่ส่งกลิ่น ไม่เป็นแหล่งเพาะพันธุ์สัตว์พาหะ</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">C18</td><td>มีการส่งขยะทั่วไปเข้าสู่ระบบเก็บขนของท้องถิ่นอย่างสม่ำเสมอ</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">C19</td><td>มีการจัดการขยะอินทรีย์/เศษอาหาร เช่น หมักปุ๋ย เลี้ยงสัตว์ หรือส่งต่อชุมชน</td><td><span class="tag t3">ข้อเสริม</span></td></tr>
-   <tr><td class="id">C20</td><td>มีการคัดแยกและจัดการขยะอันตราย เช่น หลอดไฟ ถ่านไฟฉาย อย่างถูกวิธี</td><td><span class="tag t3">ข้อเสริม</span></td></tr>
-  </tbody></table></div>
-  <h3 class="h3">พาหะนำโรค (C21–C22) · สัตว์ (C23) · ความสะอาดโดยรอบ (C24)</h3>
-  <div class="tw"><table><thead><tr><th style="width:70px">รหัส</th><th>เกณฑ์การประเมิน</th><th style="width:120px">ประเภท</th></tr></thead><tbody>
-   <tr><td class="id">C21</td><td>ไม่พบแหล่งเพาะพันธุ์ลูกน้ำยุงลายในภาชนะหรือพื้นที่วัด</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">C22</td><td>มีมาตรการควบคุมหนู แมลงสาบ และแมลงวัน ในโรงครัวและจุดพักขยะ</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">C23</td><td>มีการดูแลสัตว์ในวัดอย่างเหมาะสม เช่น จัดจุดให้อาหาร ทำหมัน/วัคซีน และไม่ปล่อยให้มูลสะสม</td><td><span class="tag t3">ข้อเสริม</span></td></tr>
-   <tr><td class="id">C24</td><td>พื้นที่รอบรั้ววัดและทางเข้าออกสะอาด ไม่มีขยะตกค้างหรือวัชพืชรกทึบ</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-  </tbody></table></div>
-  <h3 class="h3">เมรุ/ฌาปนสถาน (C25)* · งานวัด/ตลาดนัด (C26)*</h3>
-  <div class="tw"><table><thead><tr><th style="width:70px">รหัส</th><th>เกณฑ์การประเมิน</th><th style="width:150px">ประเภท</th></tr></thead><tbody>
-   <tr><td class="id">C25</td><td>เมรุ/ฌาปนสถานสะอาด มีการควบคุมควันและจัดการเถ้าอย่างเหมาะสม</td><td><span class="tag t3">ข้อเสริม</span> <span class="na">N/A ถ้าไม่มีเมรุ</span></td></tr>
-   <tr><td class="id">C26</td><td>มีมาตรการจัดการขยะและสุขาภิบาลระหว่างการจัดงานวัดหรือตลาดนัด</td><td><span class="tag t3">ข้อเสริม</span> <span class="na">N/A ถ้าไม่มีงานวัด</span></td></tr>
-  </tbody></table></div>
-  <div style="margin-top:26px;display:flex;gap:12px;flex-wrap:wrap">
-   <a href="#/std-green" class="btn btn-s">องค์ประกอบถัดไป: GREEN →</a>
-   <a href="#/tool-audit" class="btn btn-p">📝 ประเมินตนเองในหมวดนี้</a></div>
- </div></section>
-</div>
-
-<!-- ============================================================ GREEN -->
-<div class="pg" id="p-std-green">
- <div class="phead"><div class="wrap"><div class="crumb">หน้าแรก › มาตรฐาน › องค์ประกอบที่ 2</div>
-  <span class="badge">GREEN</span><h1>สิ่งแวดล้อม พลังงาน น้ำ และความปลอดภัย</h1><p>25 ข้อ (G1–G25) · 12 คะแนน · ครอบคลุมตั้งแต่ภูมิทัศน์สีเขียวจนถึงความปลอดภัยของผู้มาเยือน</p></div></div>
- <section><div class="wrap">
-  <h3 class="h3">พื้นที่สีเขียวและภูมิทัศน์ (G1–G6)</h3>
-  <div class="tw"><table><thead><tr><th style="width:70px">รหัส</th><th>เกณฑ์การประเมิน</th><th style="width:120px">ประเภท</th></tr></thead><tbody>
-   <tr><td class="id">G1</td><td>มีพื้นที่สีเขียวและไม้ยืนต้นให้ร่มเงาอย่างเพียงพอเหมาะสมกับขนาดวัด</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">G2</td><td>มีการดูแลและตัดแต่งต้นไม้อย่างปลอดภัยและสม่ำเสมอ ไม่มีกิ่งเสี่ยงหักโค่น</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">G3</td><td>มีการปลูกต้นไม้เพิ่มเติมอย่างน้อยปีละ 1 ครั้ง พร้อมบันทึกกิจกรรม</td><td><span class="tag t3">ข้อเสริม</span></td></tr>
-   <tr><td class="id">G4</td><td>ภูมิทัศน์เป็นระเบียบ สงบ ร่มรื่น เอื้อต่อการปฏิบัติธรรมและการพักผ่อน</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">G5</td><td>ไม่มีการเผาใบไม้ กิ่งไม้ หรือเศษวัสดุในที่โล่งภายในวัด</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">G6</td><td>มีมาตรการลดควันจากธูปเทียน เช่น กำหนดจุดจุดธูป ใช้ธูปสั้น หรือเตาควบคุมควัน</td><td><span class="tag t3">ข้อเสริม</span></td></tr>
-  </tbody></table></div>
-  <h3 class="h3">พลังงาน (G7–G12)*</h3>
-  <div class="tw"><table><thead><tr><th style="width:70px">รหัส</th><th>เกณฑ์การประเมิน</th><th style="width:150px">ประเภท</th></tr></thead><tbody>
-   <tr><td class="id">G7</td><td>เปลี่ยนหลอดไฟเป็นชนิด LED หรือหลอดประหยัดพลังงานในพื้นที่หลักของวัด</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">G8</td><td>มีมาตรการปิดไฟ พัดลม และเครื่องปรับอากาศเมื่อไม่ใช้งาน พร้อมป้ายเตือน</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">G9</td><td>มีการบันทึกและติดตามค่าไฟฟ้าเปรียบเทียบรายเดือนอย่างต่อเนื่อง</td><td><span class="tag t3">ข้อเสริม</span></td></tr>
-   <tr><td class="id">G10</td><td>มีการใช้พลังงานทดแทน เช่น โซลาร์เซลล์ หรือโคมไฟพลังงานแสงอาทิตย์</td><td><span class="tag t3">ข้อเสริม</span> <span class="na">N/A ได้</span></td></tr>
-   <tr><td class="id">G11</td><td>อุปกรณ์ไฟฟ้าได้รับการบำรุงรักษาตามรอบ เช่น ล้างเครื่องปรับอากาศ</td><td><span class="tag t3">ข้อเสริม</span> <span class="na">N/A ถ้าไม่มีแอร์</span></td></tr>
-   <tr><td class="id">G12</td><td>ออกแบบการใช้แสงธรรมชาติและการระบายอากาศตามธรรมชาติในอาคาร</td><td><span class="tag t3">ข้อเสริม</span></td></tr>
-  </tbody></table></div>
-  <h3 class="h3">น้ำ (G13–G15)* · น้ำฝน/น้ำใช้ซ้ำ (G16)</h3>
-  <div class="tw"><table><thead><tr><th style="width:70px">รหัส</th><th>เกณฑ์การประเมิน</th><th style="width:150px">ประเภท</th></tr></thead><tbody>
-   <tr><td class="id">G13</td><td>มีการตรวจสอบและซ่อมแซมจุดรั่วของระบบน้ำอย่างสม่ำเสมอ</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">G14</td><td>ติดตั้งอุปกรณ์ประหยัดน้ำ เช่น ก๊อกประหยัดน้ำ หรือระบบปิดอัตโนมัติ</td><td><span class="tag t3">ข้อเสริม</span> <span class="na">N/A ได้</span></td></tr>
-   <tr><td class="id">G15</td><td>มีการบันทึกปริมาณการใช้น้ำหรือค่าน้ำประปาเพื่อติดตามการใช้</td><td><span class="tag t3">ข้อเสริม</span> <span class="na">N/A ถ้าไม่มีประปา</span></td></tr>
-   <tr><td class="id">G16</td><td>มีระบบเก็บกักน้ำฝนหรือการนำน้ำกลับมาใช้ซ้ำ เช่น รดน้ำต้นไม้</td><td><span class="tag t3">ข้อเสริม</span></td></tr>
-  </tbody></table></div>
-  <h3 class="h3">ขยะและทรัพยากร (G17–G18)</h3>
-  <div class="tw"><table><thead><tr><th style="width:70px">รหัส</th><th>เกณฑ์การประเมิน</th><th style="width:120px">ประเภท</th></tr></thead><tbody>
-   <tr><td class="id">G17</td><td>ลดการใช้พลาสติกใช้ครั้งเดียวและโฟมในกิจกรรมของวัด เช่น งานบุญ งานประเพณี</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">G18</td><td>ส่งเสริมการใช้ซ้ำและรีไซเคิล เช่น ผ้าป่ารีไซเคิล ธนาคารขยะ หรือจุดรับบริจาควัสดุ</td><td><span class="tag t3">ข้อเสริม</span></td></tr>
-  </tbody></table></div>
-  <h3 class="h3">ความปลอดภัย (G19–G24) · การเข้าถึง (G25)*</h3>
-  <div class="tw"><table><thead><tr><th style="width:70px">รหัส</th><th>เกณฑ์การประเมิน</th><th style="width:150px">ประเภท</th></tr></thead><tbody>
-   <tr><td class="id">G19</td><td>มีถังดับเพลิงเพียงพอ อยู่ในสภาพพร้อมใช้ และตรวจสอบตามรอบ</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">G20</td><td>ระบบไฟฟ้าปลอดภัย ไม่มีสายไฟชำรุด มีเบรกเกอร์และสายดินที่เหมาะสม</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">G21</td><td>มีแสงสว่างเพียงพอในเวลากลางคืน โดยเฉพาะทางเดินและจุดเสี่ยง</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">G22</td><td>มีป้ายเตือน ป้ายบอกทางหนีไฟ และจุดรวมพลที่ชัดเจน</td><td><span class="tag t3">ข้อเสริม</span></td></tr>
-   <tr><td class="id">G23</td><td>มีชุดปฐมพยาบาลพร้อมใช้ และติดประกาศหมายเลขโทรศัพท์ฉุกเฉิน</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">G24</td><td>โครงสร้างอาคาร ราวบันได และพื้นต่างระดับอยู่ในสภาพปลอดภัย</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">G25</td><td>มีสิ่งอำนวยความสะดวกสำหรับผู้สูงอายุและผู้พิการ เช่น ทางลาด ราวจับ ห้องน้ำเฉพาะ</td><td><span class="tag t3">ข้อเสริม</span> <span class="na">N/A ได้</span></td></tr>
-  </tbody></table></div>
-  <div style="margin-top:26px;display:flex;gap:12px;flex-wrap:wrap">
-   <a href="#/std-part" class="btn btn-s">องค์ประกอบถัดไป: PARTICIPATION →</a>
-   <a href="#/tool-audit" class="btn btn-p">📝 ประเมินตนเองในหมวดนี้</a></div>
- </div></section>
-</div>
-
-<!-- ============================================================ PARTICIPATION -->
-<div class="pg" id="p-std-part">
- <div class="phead"><div class="wrap"><div class="crumb">หน้าแรก › มาตรฐาน › องค์ประกอบที่ 3</div>
-  <span class="badge">PARTICIPATION</span><h1>นโยบายและการมีส่วนร่วม</h1><p>13 ข้อ (P1–P13) · 6 คะแนน · หัวใจของความยั่งยืนคือการมีเจ้าภาพและมีคนร่วมทำ</p></div></div>
- <section><div class="wrap">
-  <h3 class="h3">นโยบาย (P1–P3)</h3>
-  <div class="tw"><table><thead><tr><th style="width:70px">รหัส</th><th>เกณฑ์การประเมิน</th><th style="width:120px">ประเภท</th></tr></thead><tbody>
-   <tr><td class="id">P1</td><td>มีประกาศนโยบายวัดสีเขียวเป็นลายลักษณ์อักษร</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">P2</td><td>นโยบายได้รับความเห็นชอบจากเจ้าอาวาสและคณะสงฆ์ของวัด</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">P3</td><td>มีการเผยแพร่นโยบายให้พระสงฆ์ ญาติโยม และผู้มาเยือนรับทราบ</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-  </tbody></table></div>
-  <h3 class="h3">คณะทำงาน (P4–P6)</h3>
-  <div class="tw"><table><thead><tr><th style="width:70px">รหัส</th><th>เกณฑ์การประเมิน</th><th style="width:120px">ประเภท</th></tr></thead><tbody>
-   <tr><td class="id">P4</td><td>มีคำสั่งแต่งตั้งคณะทำงานวัดสีเขียวอย่างเป็นทางการ</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">P5</td><td>คณะทำงานมีบทบาทหน้าที่ชัดเจน และระบุผู้ประสานงานหลัก</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">P6</td><td>มีการประชุมคณะทำงานอย่างน้อยปีละ 2 ครั้ง พร้อมบันทึกการประชุม</td><td><span class="tag t3">ข้อเสริม</span></td></tr>
-  </tbody></table></div>
-  <h3 class="h3">ชุมชนและอาสาสมัคร (P7–P8) · การสื่อสารและการเรียนรู้ (P9–P10)</h3>
-  <div class="tw"><table><thead><tr><th style="width:70px">รหัส</th><th>เกณฑ์การประเมิน</th><th style="width:120px">ประเภท</th></tr></thead><tbody>
-   <tr><td class="id">P7</td><td>ชุมชนและญาติโยมมีส่วนร่วมในกิจกรรมวัดสีเขียวอย่างสม่ำเสมอ</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">P8</td><td>มีอาสาสมัครหรือเครือข่ายจิตอาสาช่วยดูแลความสะอาดและพื้นที่สีเขียว</td><td><span class="tag t3">ข้อเสริม</span></td></tr>
-   <tr><td class="id">P9</td><td>มีป้ายนิเทศหรือสื่อให้ความรู้ด้านสิ่งแวดล้อมภายในวัด</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">P10</td><td>มีการสอดแทรกธรรมะด้านสิ่งแวดล้อมในการเทศนาหรือกิจกรรมของวัด</td><td><span class="tag t3">ข้อเสริม</span></td></tr>
-  </tbody></table></div>
-  <h3 class="h3">การติดตามและพัฒนา (P11–P12) · เครือข่ายท้องถิ่น (P13)*</h3>
-  <div class="tw"><table><thead><tr><th style="width:70px">รหัส</th><th>เกณฑ์การประเมิน</th><th style="width:150px">ประเภท</th></tr></thead><tbody>
-   <tr><td class="id">P11</td><td>มีการประเมินตนเองและบันทึกผลอย่างน้อยปีละ 1 ครั้ง</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">P12</td><td>มีแผนปรับปรุงตามวงจร PDCA และมีการดำเนินการตามแผนจริง</td><td><span class="tag t2">ข้อหลัก</span></td></tr>
-   <tr><td class="id">P13</td><td>มีความร่วมมือกับเครือข่ายท้องถิ่น เช่น อปท. สพจ. อสม. หรือโรงเรียนในพื้นที่</td><td><span class="tag t3">ข้อเสริม</span> <span class="na">N/A ได้</span></td></tr>
-  </tbody></table></div>
-  <div style="margin-top:26px;display:flex;gap:12px;flex-wrap:wrap">
-   <a href="#/std-score" class="btn btn-s">ถัดไป: ระบบให้คะแนนและ N/A →</a>
-   <a href="#/downloads" class="btn btn-p">⬇ ดาวน์โหลดเอกสารตัวอย่างนโยบาย</a></div>
- </div></section>
-</div>
-
-<!-- ============================================================ SCORING -->
-<div class="pg" id="p-std-score">
- <div class="phead"><div class="wrap"><div class="crumb">หน้าแรก › มาตรฐาน › ระบบให้คะแนน</div>
-  <h1>ระบบการให้คะแนนและข้อ N/A</h1><p>หลักการปรับฐานคะแนนเพื่อความเป็นธรรมกับวัดที่มีบริบทต่างกัน</p></div></div>
- <section><div class="wrap">
-  <h3 class="h3">1. หลักการ N/A (Not Applicable – ไม่เกี่ยวข้อง)</h3>
-  <p>ข้อที่ <b>ไม่สอดคล้องกับบริบทจริงของวัด</b> สามารถระบุ N/A ได้ เช่น วัดที่ไม่มีเมรุ ไม่มีโรงครัว ไม่มีเครื่องปรับอากาศ หรือไม่มีระบบประปา ข้อเหล่านั้นจะถูก <b>ตัดออกจากฐานการคำนวณ</b> ไม่นับเป็นทั้งคะแนนได้และคะแนนเสีย</p>
-  <div class="note" style="margin-top:14px"><b>ข้อควรระวัง:</b> N/A ต้องใช้เมื่อ “ไม่มีสิ่งนั้นอยู่จริง” เท่านั้น ไม่ใช่เพราะ “ยังทำไม่ได้” หรือ “ยังไม่ได้ทำ” — ความสมเหตุสมผลของข้อ N/A จะถูกตรวจทานในขั้นที่ 3 (ตรวจคัดกรอง) และยืนยันในขั้นที่ 4 (ตรวจประเมินภายนอก)</div>
-  <h3 class="h3">2. ข้อหลัก vs ข้อเสริม</h3>
-  <div class="tw"><table><thead><tr><th>ประเภท</th><th>ลักษณะ</th><th>การระบุ N/A</th><th>ตัวอย่าง</th></tr></thead><tbody>
-   <tr><td><span class="tag t2">ข้อหลัก</span></td><td>สิ่งที่วัดทุกแห่งควรทำได้ ไม่ต้องใช้งบประมาณสูง เกี่ยวข้องกับสุขอนามัยและความปลอดภัยพื้นฐาน</td><td>โดยหลักไม่ให้ระบุ N/A</td><td>C7 ห้องส้วมสะอาด · G19 ถังดับเพลิงพร้อมใช้ · P1 มีนโยบาย</td></tr>
-   <tr><td><span class="tag t3">ข้อเสริม</span></td><td>การยกระดับที่ขึ้นกับความพร้อมด้านงบประมาณ พื้นที่ หรือลักษณะเฉพาะของวัด</td><td>ระบุ N/A ได้เมื่อไม่มีบริบทนั้น</td><td>G10 โซลาร์เซลล์ · C25 เมรุ · G25 ทางลาดผู้พิการ</td></tr>
-  </tbody></table></div>
-  <h3 class="h3">3. สูตรคำนวณคะแนน (ปรับตาม N/A)</h3>
-  <div class="formula">คะแนนองค์ประกอบ = <b>(ข้อที่ผ่าน ÷ ข้อที่ประเมินจริง) × คะแนนเต็มขององค์ประกอบ</b><br>
-   <span style="font-size:.9rem;opacity:.85">โดย ข้อที่ประเมินจริง = จำนวนข้อทั้งหมด − ข้อที่ระบุ N/A</span></div>
-  <div class="tw" style="margin-top:20px"><table><thead><tr><th>องค์ประกอบ</th><th>ข้อทั้งหมด</th><th>N/A</th><th>ประเมินจริง</th><th>ผ่าน</th><th>คะแนนเต็ม</th><th>คะแนนที่ได้</th></tr></thead><tbody>
-   <tr><td>🧹 CLEAN</td><td>26</td><td>2</td><td>24</td><td>21</td><td>12</td><td><b>10.50</b></td></tr>
-   <tr><td>🌿 GREEN</td><td>25</td><td>3</td><td>22</td><td>18</td><td>12</td><td><b>9.82</b></td></tr>
-   <tr><td>🤝 PARTICIPATION</td><td>13</td><td>1</td><td>12</td><td>10</td><td>6</td><td><b>5.00</b></td></tr>
-   <tr style="background:var(--g50)"><td colspan="6"><b>คะแนนรวม (ปัดเป็นจำนวนเต็ม)</b></td><td><b>25 / 30 → ดีมาก</b></td></tr>
-  </tbody></table></div>
-  <h3 class="h3">4. เงื่อนไขเพิ่มเติม</h3>
-  <div class="cards">
-   <div class="card"><div class="ico">🧾</div><h3>ต้องมีหลักฐาน</h3><p>ข้อที่ตอบ “ผ่าน” ต้องมีหลักฐานประกอบ เช่น ภาพถ่าย เอกสาร หรือการสังเกตในพื้นที่จริง</p></div>
-   <div class="card"><div class="ico">⚖️</div><h3>เพดาน N/A</h3><p>หากมีข้อ N/A มากผิดปกติ ผู้ตรวจอาจขอให้ทบทวน เพื่อป้องกันการตัดข้อเพื่อเพิ่มคะแนน</p></div>
-   <div class="card"><div class="ico">🔁</div><h3>ปัดเศษ</h3><p>คำนวณคะแนนแต่ละองค์ประกอบเป็นทศนิยม 2 ตำแหน่ง แล้วปัดคะแนนรวมเป็นจำนวนเต็ม</p></div>
+<!-- ============ FAQ ============ -->
+<section class="alt" id="faq">
+<div class="wrap">
+  <div class="sec-head rv"><span class="kick">FAQ</span><h2>คำถามที่พบบ่อย</h2></div>
+  <div class="faq">
+    <details class="q rv" open><summary>ข้อ N/A คืออะไร? ควรตอบอย่างไร?</summary>
+      <div class="a">N/A คือข้อที่ “ไม่เกี่ยวข้องกับบริบทของวัด” เช่น วัดไม่มีเมรุก็ตอบ N/A ในข้อ C25 ระบบจะตัดข้อนั้นออกจากตัวหาร ทำให้ไม่เสียคะแนน แต่ถ้าตอบ N/A เกิน 50% ของข้อทั้งหมด ผลจะถือว่าไม่สมบูรณ์</div></details>
+    <details class="q rv"><summary>ข้อหลัก กับ ข้อเสริม ต่างกันอย่างไร?</summary>
+      <div class="a">ข้อหลักคือเกณฑ์ขั้นพื้นฐานที่วัดต้องผ่านเพื่อรับรองระดับสูง ส่วนข้อเสริมเป็นการยกระดับเพิ่มเติม ข้อที่มีเครื่องหมาย <span class="star">*</span> จะนับเป็นข้อหลัก “เฉพาะเมื่อวัดมีโครงสร้างพื้นฐานนั้น”</div></details>
+    <details class="q rv"><summary>วัดขนาดเล็ก มีบุคลากรไม่ครบ ทำอย่างไร?</summary>
+      <div class="a">สามารถแต่งตั้งคณะทำงานแบบควบบทบาทได้ โดยใช้แบบแต่งตั้งต้นแบบในหน้าดาวน์โหลด และขอความร่วมมือจากอาสาสมัครชุมชนหรือ อสม. ในพื้นที่ร่วมเป็นคณะทำงาน</div></details>
+    <details class="q rv"><summary>จะประสานงานกับหน่วยงานท้องถิ่นได้อย่างไร? (P13)</summary>
+      <div class="a">ติดต่อผ่าน อบต./เทศบาลในพื้นที่ หรือสำนักงานพระพุทธศาสนาจังหวัด เพื่อขอสนับสนุนด้านการจัดการขยะ น้ำเสีย และการตรวจประเมินภายนอก ซึ่งนับเป็นหลักฐานของข้อ P13 ได้โดยตรง</div></details>
   </div>
- </div></section>
 </div>
+</section>
 
-<!-- ============================================================ LEVELS -->
-<div class="pg" id="p-std-level">
- <div class="phead"><div class="wrap"><div class="crumb">หน้าแรก › มาตรฐาน › ระดับมาตรฐาน</div>
-  <h1>ระดับมาตรฐานและการแปลผล</h1><p>4 ระดับ พร้อมข้อเสนอแนะเชิงพัฒนาสำหรับแต่ละระดับ</p></div></div>
- <section><div class="wrap">
-  <div class="levels" style="margin-bottom:34px">
-   <div class="lvl"><b>🏆 ผ่านระดับดีเลิศ</b><div class="tr"><div class="fl c1" data-w="100"></div></div><div class="sc">26–30</div></div>
-   <div class="lvl"><b>🥈 ผ่านระดับดีมาก</b><div class="tr"><div class="fl c2" data-w="83"></div></div><div class="sc">21–25</div></div>
-   <div class="lvl"><b>🥉 ผ่านระดับดี</b><div class="tr"><div class="fl c3" data-w="66"></div></div><div class="sc">16–20</div></div>
-   <div class="lvl"><b>⚠️ ยังไม่ผ่านมาตรฐาน</b><div class="tr"><div class="fl c4" data-w="50"></div></div><div class="sc">0–15</div></div>
+<!-- ============ PARTNERS ============ -->
+<section id="partners">
+<div class="wrap">
+  <div class="sec-head rv"><span class="kick">Network</span><h2>เครือข่ายและหน่วยงานที่เกี่ยวข้อง</h2></div>
+  <div class="plogos rv">
+    <div class="plogo"><div class="c">🎓</div><b>ม.มหิดล</b><span>คณะสิ่งแวดล้อมฯ</span></div>
+    <div class="plogo"><div class="c">☸️</div><b>มจร</b><span>มหาจุฬาลงกรณราชวิทยาลัย</span></div>
+    <div class="plogo"><div class="c">📜</div><b>กรมเสมียนตรา</b><span>หน่วยงานร่วมพัฒนา</span></div>
+    <div class="plogo"><div class="c">🏛️</div><b>อปท.</b><span>อบต. / เทศบาล</span></div>
+    <div class="plogo"><div class="c">🏢</div><b>สพจ.</b><span>สนง.พระพุทธศาสนาจังหวัด</span></div>
+    <div class="plogo"><div class="c">🌏</div><b>กรมส่งเสริมคุณภาพสิ่งแวดล้อม</b><span>กระทรวง ทส.</span></div>
   </div>
-  <div class="tw"><table><thead><tr><th>ระดับ</th><th>คะแนน</th><th>การแปลผล</th><th>ข้อเสนอแนะเชิงพัฒนา</th></tr></thead><tbody>
-   <tr><td><span class="tag t1">ดีเลิศ</span></td><td><b>26–30</b></td><td>วัดมีการดำเนินงานครบถ้วนทั้ง 3 องค์ประกอบ มีระบบและหลักฐานชัดเจน</td><td>ยกระดับเป็นวัดต้นแบบ ถ่ายทอดประสบการณ์ให้วัดอื่นในเครือข่าย และเป็นแหล่งเรียนรู้ของชุมชน</td></tr>
-   <tr><td><span class="tag t2">ดีมาก</span></td><td><b>21–25</b></td><td>วัดมีการดำเนินงานดีในภาพรวม ยังมีบางประเด็นที่ต้องเสริม</td><td>เน้นเพิ่มการจัดการพลังงาน น้ำ และการบันทึกข้อมูลอย่างเป็นระบบ</td></tr>
-   <tr><td><span class="tag t3">ดี</span></td><td><b>16–20</b></td><td>วัดผ่านเกณฑ์พื้นฐาน แต่ยังขาดความต่อเนื่องและระบบเอกสาร</td><td>จัดตั้งคณะทำงานให้ชัดเจน จัดทำแผนปรับปรุง และยกระดับการจัดการขยะครบวงจร</td></tr>
-   <tr><td><span class="tag t4">ยังไม่ผ่าน</span></td><td><b>0–15</b></td><td>ยังมีประเด็นพื้นฐานด้านสุขาภิบาลหรือความปลอดภัยที่ต้องแก้ไข</td><td>เริ่มจากข้อหลัก: ห้องน้ำสะอาด แยกขยะ กำจัดแหล่งลูกน้ำ และแต่งตั้งผู้รับผิดชอบ</td></tr>
-  </tbody></table></div>
-  <h3 class="h3">การรับรองและอายุผลการประเมิน</h3>
-  <div class="cards">
-   <div class="card"><div class="ico">📜</div><h3>ใบรับรอง</h3><p>วัดที่ผ่านตั้งแต่ระดับดีขึ้นไปจะได้รับใบรับรองต้นแบบตามรูปแบบที่คณะทำงานกำหนด</p></div>
-   <div class="card"><div class="ico">🗓️</div><h3>อายุผล</h3><p>ผลการประเมินใช้อ้างอิงได้ตามรอบที่กำหนด และควรเข้ารับการประเมินซ้ำในรอบถัดไป</p></div>
-   <div class="card"><div class="ico">📈</div><h3>การเลื่อนระดับ</h3><p>วัดสามารถขอประเมินซ้ำเพื่อเลื่อนระดับได้ หลังดำเนินการตามแผนปรับปรุงครบถ้วน</p></div>
-  </div>
- </div></section>
 </div>
+</section>
 
-<!-- ============================================================ TOOL: CONTEXT -->
-<div class="pg" id="p-tool-context">
- <div class="phead"><div class="wrap"><div class="crumb">หน้าแรก › เครื่องมือประเมิน › แบบสำรวจบริบทวัด</div>
-  <h1>แบบสำรวจบริบทวัด (ขั้นที่ 0)</h1><p>กรอกก่อนเริ่มประเมิน เพื่อกำหนดว่าข้อใดสามารถระบุ N/A ได้ตามบริบทจริงของวัด</p></div></div>
- <section><div class="wrap">
-  <div class="tool">
-   <h3 class="h3" style="margin-top:0">ข้อมูลทั่วไป</h3>
-   <div class="g2">
-    <div class="fr"><label>ชื่อวัด</label><input type="text" placeholder="เช่น วัดธรรมาราม"></div>
-    <div class="fr"><label>ตำบล / อำเภอ / จังหวัด</label><input type="text" placeholder="เช่น ศาลายา / พุทธมณฑล / นครปฐม"></div>
-    <div class="fr"><label>ขนาดวัด (ไร่)</label><input type="number" placeholder="เช่น 12"></div>
-    <div class="fr"><label>จำนวนพระภิกษุ–สามเณร (รูป)</label><input type="number" placeholder="เช่น 18"></div>
-    <div class="fr"><label>ที่ตั้ง</label><select><option>ในเขตเมือง</option><option>กึ่งเมืองกึ่งชนบท</option><option>ชนบท</option><option>พื้นที่ป่า/ภูเขา</option></select></div>
-    <div class="fr"><label>ผู้ประสานงานหลัก</label><input type="text" placeholder="ชื่อ–ฉายา / ตำแหน่ง"></div>
-   </div>
-   <h3 class="h3">สาธารณูปโภคและบริบทเฉพาะ (มีผลต่อข้อ N/A)</h3>
-   <div class="chk"><input type="checkbox" checked><div class="txt"><b>ระบบประปา</b> วัดใช้น้ำประปาและมีมิเตอร์วัดปริมาณ <span style="color:var(--muted)">— เกี่ยวข้องกับ G15</span></div></div>
-   <div class="chk"><input type="checkbox" checked><div class="txt"><b>โรงครัว</b> วัดมีโรงครัวหรือพื้นที่ปรุงอาหารประจำ <span style="color:var(--muted)">— เกี่ยวข้องกับ C5, C11</span></div></div>
-   <div class="chk"><input type="checkbox"><div class="txt"><b>เมรุ/ฌาปนสถาน</b> วัดมีเมรุและใช้งานจริง <span style="color:var(--muted)">— เกี่ยวข้องกับ C25</span></div></div>
-   <div class="chk"><input type="checkbox"><div class="txt"><b>งานวัด/ตลาดนัด</b> วัดมีการจัดงานวัดหรือให้ใช้พื้นที่ตลาดนัด <span style="color:var(--muted)">— เกี่ยวข้องกับ C26</span></div></div>
-   <div class="chk"><input type="checkbox" checked><div class="txt"><b>เครื่องปรับอากาศ</b> วัดมีเครื่องปรับอากาศในอาคาร <span style="color:var(--muted)">— เกี่ยวข้องกับ G11</span></div></div>
-   <div class="chk"><input type="checkbox"><div class="txt"><b>พลังงานทดแทน</b> วัดมีหรือมีแผนติดตั้งโซลาร์เซลล์ <span style="color:var(--muted)">— เกี่ยวข้องกับ G10</span></div></div>
-   <div class="chk"><input type="checkbox" checked><div class="txt"><b>ระบบเก็บขนขยะท้องถิ่น</b> มี อปท. เข้ามาเก็บขนขยะ <span style="color:var(--muted)">— เกี่ยวข้องกับ C18</span></div></div>
-   <div class="chk"><input type="checkbox" checked><div class="txt"><b>เครือข่ายท้องถิ่น</b> มีการทำงานร่วมกับ อปท./สพจ./อสม./โรงเรียน <span style="color:var(--muted)">— เกี่ยวข้องกับ P13</span></div></div>
-   <div class="fr" style="margin-top:18px"><label>หมายเหตุเพิ่มเติมเกี่ยวกับบริบทวัด</label><textarea placeholder="เช่น วัดอยู่ติดแหล่งน้ำสาธารณะ มีพื้นที่ป่าชุมชน 5 ไร่ ฯลฯ"></textarea></div>
-   <div style="display:flex;gap:12px;flex-wrap:wrap"><a href="#/tool-audit" class="btn btn-p">ถัดไป: เริ่มประเมินตนเอง →</a><a href="#/downloads" class="btn btn-s">⬇ ดาวน์โหลดแบบฟอร์ม PDF</a></div>
+<!-- ============ CTA BAND ============ -->
+<section style="padding-top:0" id="contact"><div class="wrap"><div class="band rv">
+  <h2>พร้อมพาวัดของท่านสู่มาตรฐานวัดสีเขียวแล้วหรือยัง?</h2>
+  <p>ดาวน์โหลดคู่มือ เริ่มประเมินตนเอง หรือปรึกษาทีมงานโครงการได้ฟรี ไม่มีค่าใช้จ่าย</p>
+  <div class="cta" style="justify-content:center">
+    <a href="#tools" class="btn btn-p">📝 เริ่มประเมินตนเอง</a>
+    <a href="#" class="btn btn-g">💬 ปรึกษาทีมงาน</a>
   </div>
- </div></section>
+</div></div></section>
+
+<!-- ============ FOOTER / SITEMAP ============ -->
+<footer id="sitemap">
+<div class="wrap">
+  <div class="fgrid">
+    <div>
+      <div class="fbrand"><div class="logo">🌿</div><b>วัดสีเขียว GTS</b></div>
+      <p>โครงการมาตรฐานวัดสีเขียว เพื่อส่งเสริมให้วัดเป็นพื้นที่สะอาด ร่มรื่น ปลอดภัย และเป็นศูนย์กลางการเรียนรู้ด้านสิ่งแวดล้อมของชุมชน</p>
+      <p style="margin-top:12px;font-size:.85rem;opacity:.8">📄 ฉบับร่างเพื่อการพัฒนา · Draft for Development</p>
+    </div>
+    <div><h5>มาตรฐาน</h5><ul>
+      <li><a href="#standard">โครงสร้างมาตรฐาน</a></li>
+      <li><a href="#standard">CLEAN (26 ข้อ)</a></li>
+      <li><a href="#standard">GREEN (25 ข้อ)</a></li>
+      <li><a href="#standard">PARTICIPATION (13 ข้อ)</a></li>
+      <li><a href="#na">ระบบข้อ N/A</a></li>
+      <li><a href="#levels">ระดับมาตรฐาน</a></li>
+    </ul></div>
+    <div><h5>เครื่องมือ & ขั้นตอน</h5><ul>
+      <li><a href="#tools">แบบสำรวจบริบทวัด</a></li>
+      <li><a href="#tools">Self-Audit 64 ข้อ</a></li>
+      <li><a href="#tools">ใบสรุปคะแนน</a></li>
+      <li><a href="#tools">แบบแผนปรับปรุง</a></li>
+      <li><a href="#process">ขั้นตอนประเมิน 7 ขั้น</a></li>
+    </ul></div>
+    <div><h5>ข้อมูล</h5><ul>
+      <li><a href="#downloads">เอกสารดาวน์โหลด</a></li>
+      <li><a href="#news">ข่าวสารและกิจกรรม</a></li>
+      <li><a href="#map">แผนที่วัดสีเขียว</a></li>
+      <li><a href="#results">ผลการประเมิน</a></li>
+      <li><a href="#faq">คำถามที่พบบ่อย</a></li>
+      <li><a href="#sitemap">แผนผังเว็บไซต์</a></li>
+    </ul></div>
+    <div><h5>ติดต่อเรา</h5><ul>
+      <li>📍 สำนักงานโครงการวัดสีเขียว</li>
+      <li>📞 0-2000-0000</li>
+      <li>✉️ info@greentemple.or.th</li>
+      <li>🕘 จันทร์–ศุกร์ 08.30–16.30 น.</li>
+      <li>🏛️ ประสานผ่าน อบต./เทศบาล/สพจ.</li>
+    </ul></div>
+  </div>
+  <div class="fbot">
+    <span>© 2026 วัดสีเขียว Green Temple Standard · สงวนลิขสิทธิ์</span>
+    <span><a href="#">นโยบายความเป็นส่วนตัว</a><a href="#contact">ติดต่อ</a><a href="#sitemap">แผนผังเว็บไซต์</a></span>
+  </div>
 </div>
+</footer>
 
-<!-- ============================================================ TOOL: AUDIT -->
-<div class="pg" id="p-tool-audit">
- <div class="phead"><div class="wrap"><div class="crumb">หน้าแรก › เครื่องมือประเมิน › Self-Audit</div>
-  <h1>แบบตรวจประเมินตนเอง 64 ข้อ</h1><p>ติ๊ก “ผ่าน” ในข้อที่วัดดำเนินการได้จริง และติ๊ก “N/A” ในข้อที่ไม่เกี่ยวข้องกับบริบทวัด ระบบจะคำนวณคะแนนแบบปรับฐานให้อัตโนมัติ</p></div></div>
- <section><div class="wrap">
-  <div class="note" style="margin-bottom:22px"><b>วิธีใช้:</b> ช่องซ้ายคือ “ผ่านเกณฑ์” · ช่อง N/A ใช้เมื่อวัดไม่มีสิ่งนั้นอยู่จริง เมื่อติ๊ก N/A ข้อนั้นจะถูกตัดออกจากฐานคะแนนทันที · ผลลัพธ์แสดงที่แถบด้านล่างแบบเรียลไทม์</div>
-  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px">
-   <button class="btn btn-s" onclick="allPass(true)">✅ ติ๊กผ่านทั้งหมด</button>
-   <button class="btn btn-s" onclick="allPass(false)">↺ ล้างทั้งหมด</button>
-   <a href="#/downloads" class="btn btn-s">⬇ ดาวน์โหลด PDF</a>
-  </div>
-  <div id="auditBox"></div>
-  <div class="result" id="res">
-   <div class="score"><span id="total">0</span><span style="font-size:1.25rem">/30</span></div>
-   <div class="lv" id="level">⚠️ ยังไม่ผ่านมาตรฐาน</div>
-   <div class="brk" id="brk">CLEAN 0.00 · GREEN 0.00 · PARTICIPATION 0.00</div>
-   <div class="hint" id="hint">เริ่มจากข้อหลักด้านสุขาภิบาลและความปลอดภัยก่อน</div>
-  </div>
-  <div style="margin-top:22px;display:flex;gap:12px;flex-wrap:wrap">
-   <a href="#/tool-summary" class="btn btn-p">📄 ไปที่ใบสรุปคะแนน</a>
-   <a href="#/tool-plan" class="btn btn-s">📝 จัดทำแผนปรับปรุง</a></div>
- </div></section>
-</div>
+<script>
+// เมนูมือถือ
+const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.onclick=()=>menu.classList.toggle('open');
+// เปิด/ปิดเมนูย่อยบนมือถือ
+menu.querySelectorAll('li').forEach(li=>{
+  const sub=li.querySelector('.dd'),a=li.querySelector(':scope>a');
+  if(sub&&a)a.addEventListener('click',e=>{
+    if(window.innerWidth<=1150){e.preventDefault();li.classList.toggle('on')}
+  });
+});
+menu.querySelectorAll('.dd a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
 
-<!-- ============================================================ TOOL: SUMMARY -->
-<div class="pg" id="p-tool-summary">
- <div class="phead"><div class="wrap"><div class="crumb">หน้าแรก › เครื่องมือประเมิน › ใบสรุปคะแนน</div>
-  <h1>ใบสรุปคะแนน</h1><p>แบบฟอร์มสรุปผลการประเมินรายองค์ประกอบ พร้อมช่องลงนามผู้ประเมิน</p></div></div>
- <section><div class="wrap">
-  <div class="tool">
-   <div class="g2">
-    <div class="fr"><label>ชื่อวัด</label><input type="text"
+// Reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%3)*.1+'s';io.observe(el)});
+
+// นับตัวเลข
+const up=el=>{const to=+el.dataset.to;let n=0,s=to/45;const t=setInterval(()=>{n+=s;if(n>=to){n=to;clearInterval(t)}el.textContent=Math.floor(n)},22)};
+new IntersectionObserver((e,o)=>{if(e[0].isIntersecting){document.querySelectorAll('.n').forEach(up);o.disconnect()}},{threshold:.4}).observe(document.getElementById('stats'));
+
+// แถบระดับ
+new IntersectionObserver((e,o)=>{if(e[0].isIntersecting){document.querySelectorAll('.bar i').forEach((b,i)=>setTimeout(()=>b.style.width=b.dataset.w+'%',i*170));o.disconnect()}},{threshold:.3}).observe(document.getElementById('levels-bar'));
+
+// Active nav ตาม scroll
+const secs=[...document.querySelectorAll('section[id],footer[id]')];
+window.addEventListener('scroll',()=>{
+  const y=scrollY+120;let cur='home';
+  secs.forEach(s=>{if(s.offsetTop<=y)cur=s.id});
+  menu.querySelectorAll('>li>a').forEach?0:0;
+  document.querySelectorAll('#menu>li>a').forEach(a=>{
+    a.classList.toggle('active',a.getAttribute('href')==='#'+cur);
+  });
+});
+</script>
+</body>
+</html>
